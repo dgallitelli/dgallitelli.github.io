@@ -1903,7 +1903,7 @@
 		border-radius: 0.35em;
 		color: #fff !important;
 		text-decoration: none;
-		padding: 0.75em 2.5em 0.75em 2.5em;
+		padding: 0.3em 0.75em 0.3em 0.75em;
 		background-color: #8ebebc;
 		border: 0;
 		cursor: pointer;
@@ -1915,6 +1915,7 @@
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out;
+        margin: 0.2em;
 	}
 
 		input[type="button"]:hover,
@@ -2186,7 +2187,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 13pt;
 			}
 
 		/* Header */
@@ -2638,7 +2639,37 @@ ul.horizontal li{
 
 .fecha-reserva{
     width: 30%;
-    height: auto:
+    height: auto;
+    float: left;
+    margin: 0.5em;
+}
+
+.hab-reserva{
+    height: 50px; 
+    width: 65%;
+    height: auto;
+    float:left;
+    margin: 0.1em;
+    display: inline-block;
+    text-align: left;
+}
+
+.hab-reserva select{
+    width:auto;
+    display: inline-block;
+}
+
+.no-under{
+    border-bottom: none;
+    transition: none;
+}
+
+.no-under:hover{
+    color:inherit;
+}
+
+.form-button{
+    padding: 0.3em 0.3em 0.3em 0.3em;
 }
 
 .srv-hot-1-HAC,.srv-hot-2-HAC,.srv-hot-2-RMA,.srv-hot-5-HAC,.srv-hot-8-HAC,.srv-hot-9-RMA,.srv-hot-10-RMA,.srv-hot-11-RMA,.srv-hot-13-RMA,.srv-hot-15-HAC,.srv-hot-20-HAC,.srv-hot-22-HAC,.srv-hot-26-HAC,.srv-hot-26-RMA,.srv-hot-28-RMA,.srv-hot-35-HAC,.srv-hot-36-HAC,.srv-hot-37-HAC,.srv-hot-42-HAC,.srv-hot-46-HAC,.srv-hot-48-HAC,.srv-hot-50-RMA,.srv-hot-52-HAC,.srv-hot-53-HAC,.srv-hot-54-HAC,.srv-hot-56-RMA,.srv-hot-58-HAC,.srv-hot-61-RMA,.srv-hot-65-HAC,.srv-hot-66-HAC,.srv-hot-69-RMA,.srv-hot-74-HAC,.srv-hot-76-HAC,.srv-hot-77-HAC,.srv-hot-79-HAC,.srv-hot-91-RMA,.srv-hot-92-RMA,.srv-hot-101-RMA,.srv-hot-105-HAC,.srv-hot-107-RMA,.srv-hot-119-RMA,.srv-hot-123-RMA,.srv-hot-145-HAC,.srv-hot-157-HAC,.srv-hot-159-HAC,.srv-hot-179-HAC,.srv-hot-210-RMA,.srv-hot-221-RMA,.srv-hot-224-HAC,.srv-hot-229-HAC,.srv-hot-251-RMA,.srv-hot-269-HAC,.srv-hot-276-RMA,.srv-hot-277-RMA,.srv-hot-278-RMA,.srv-hot-283-HAC,.srv-hot-350-HAC,.srv-hot-351-RMA,.srv-hot-282-RMA,.srv-hot-284-RMA,.srv-hot-288-RMA,.srv-hot-352-RMA{background:url("../../images/sprites.png") no-repeat}
@@ -2703,59 +2734,3 @@ ul.horizontal li{
 .srv-hot-288-RMA{background-position: -543px -141px;width:40px;height:40px}
 .srv-hot-350-HAC{background-position:-405px 0px;width:40px;height:40px}
 .srv-hot-351-RMA, .srv-hot-352-RMA{background-position:-500px -141px;width:40px;height:40px}
-.srv-hab-1-HAC,.srv-hab-2-HAC,.srv-hab-2-RMA,.srv-hab-5-HAC,.srv-hab-8-HAC,.srv-hab-9-RMA,.srv-hab-10-RMA,.srv-hab-11-RMA,.srv-hab-13-RMA,.srv-hab-15-HAC,.srv-hab-22-HAC,.srv-hab-26-HAC,.srv-hab-26-RMA,.srv-hab-28-RMA,.srv-hab-35-HAC,.srv-hab-36-HAC,.srv-hab-37-HAC,.srv-hab-42-HAC,.srv-hab-46-HAC,.srv-hab-48-HAC,.srv-hab-50-RMA,.srv-hab-52-HAC,.srv-hab-53-HAC,.srv-hab-54-HAC,.srv-hab-56-RMA,.srv-hab-58-HAC,.srv-hab-61-RMA,.srv-hab-65-HAC,.srv-hab-66-HAC,.srv-hab-69-RMA,.srv-hab-74-HAC,.srv-hab-76-HAC,.srv-hab-79-HAC,.srv-hab-91-RMA,.srv-hab-92-RMA,.srv-hab-101-RMA,.srv-hab-105-HAC,.srv-hab-107-RMA,.srv-hab-119-RMA,.srv-hab-123-RMA,.srv-hab-145-HAC,.srv-hab-157-HAC,.srv-hab-179-HAC,.srv-hab-210-RMA,.srv-hab-221-RMA,.srv-hab-224-HAC,.srv-hab-229-HAC,.srv-hab-251-RMA,.srv-hab-269-HAC,.srv-hab-276-RMA,.srv-hab-277-RMA,.srv-hab-278-RMA,.srv-hab-281-RMA,.srv-hab-282-RMA,.srv-hab-283-HAC,.srv-hab-351-RMA{background:url("../images/icon/sprites.png") no-repeat}
-.srv-hab-1-HAC{background-position:-453px -141px;width:40px;height:40px}
-.srv-hab-2-HAC{background-position:-408px -140px;width:40px;height:40px}
-.srv-hab-2-RMA{background-position:-361px -139px;width:40px;height:40px}
-.srv-hab-5-HAC{background-position:-316px -138px;width:40px;height:40px}
-.srv-hab-8-HAC{background-position:-275px -140px;width:40px;height:40px}
-.srv-hab-9-RMA{background-position:-230px -140px;width:40px;height:40px}
-.srv-hab-10-RMA{background-position:-185px -139px;width:40px;height:40px}
-.srv-hab-11-RMA{background-position:-143px -138px;width:40px;height:40px}
-.srv-hab-13-RMA{background-position:-96px -138px;width:40px;height:40px}
-.srv-hab-15-HAC{background-position:-50px -139px;width:40px;height:40px}
-.srv-hab-22-HAC{background-position:-593px -94px;width:40px;height:40px}
-.srv-hab-26-HAC{background-position:-544px -94px;width:40px;height:40px}
-.srv-hab-26-RMA{background-position:-500px -95px;width:40px;height:40px}
-.srv-hab-28-RMA{background-position:-453px -95px;width:40px;height:40px}
-.srv-hab-35-HAC{background-position:0 -140px;width:40px;height:40px}
-.srv-hab-36-HAC{background-position:-88px -91px;width:40px;height:40px}
-.srv-hab-37-HAC{background-position:-269px -93px;width:40px;height:40px}
-.srv-hab-42-HAC{background-position:-408px -94px;width:40px;height:40px}
-.srv-hab-46-HAC{background-position:-314px -93px;width:40px;height:40px}
-.srv-hab-48-HAC{background-position:-132px -91px;width:40px;height:40px}
-.srv-hab-50-RMA{background-position:-360px -93px;width:40px;height:40px}
-.srv-hab-52-HAC{background-position:-225px -92px;width:40px;height:40px}
-.srv-hab-53-HAC{background-position:-178px -93px;width:40px;height:40px}
-.srv-hab-54-HAC{background-position:-45px -90px;width:40px;height:40px}
-.srv-hab-56-RMA{background-position:-1px -90px;width:40px;height:40px}
-.srv-hab-58-HAC{background-position:-587px -47px;width:40px;height:40px}
-.srv-hab-61-RMA{background-position:-541px -47px;width:40px;height:40px}
-.srv-hab-65-HAC{background-position:-495px -47px;width:40px;height:40px}
-.srv-hab-66-HAC{background-position:-450px -46px;width:40px;height:40px}
-.srv-hab-69-RMA{background-position:-406px -46px;width:40px;height:40px}
-.srv-hab-74-HAC{background-position:-359px -46px;width:40px;height:40px}
-.srv-hab-76-HAC{background-position:-315px -46px;width:40px;height:40px}
-.srv-hab-79-HAC{background-position:-270px -46px;width:40px;height:40px}
-.srv-hab-91-RMA{background-position:-227px -46px;width:40px;height:40px}
-.srv-hab-92-RMA{background-position:-181px -46px;width:40px;height:40px}
-.srv-hab-101-RMA{background-position:-136px -46px;width:40px;height:40px}
-.srv-hab-105-HAC{background-position:-90px -46px;width:40px;height:40px}
-.srv-hab-107-RMA{background-position:-46px -46px;width:40px;height:40px}
-.srv-hab-119-RMA{background-position:0 -45px;width:40px;height:40px}
-.srv-hab-123-RMA{background-position:-585px 0;width:40px;height:40px}
-.srv-hab-145-HAC{background-position:-541px 0;width:40px;height:40px}
-.srv-hab-157-HAC{background-position:-496px 0;width:40px;height:40px}
-.srv-hab-179-HAC{background-position:-450px 0;width:40px;height:40px}
-.srv-hab-210-RMA{background-position:-405px 0;width:40px;height:40px}
-.srv-hab-221-RMA{background-position:-360px 0;width:40px;height:40px}
-.srv-hab-224-HAC{background-position:-315px 0;width:40px;height:40px}
-.srv-hab-229-HAC{background-position:-270px 0;width:40px;height:40px}
-.srv-hab-251-RMA{background-position:-225px 0;width:40px;height:40px}
-.srv-hab-269-HAC{background-position:-180px 0;width:40px;height:40px}
-.srv-hab-276-RMA{background-position:-136px 0;width:40px;height:40px}
-.srv-hab-277-RMA{background-position:-90px -1px;width:40px;height:40px}
-.srv-hab-278-RMA{background-position:-45px -1px;width:40px;height:40px}
-.srv-hab-281-RMA{background-position:-1px -90px;width:40px;height:40px}
-.srv-hab-283-HAC{background-position:-1px 0;width:40px;height:40px}
-.srv-hab-351-RMA{background-position:-500px -141px;width:40px;height:40px}

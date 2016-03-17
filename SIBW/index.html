@@ -267,14 +267,59 @@
                         <header><h2>Reserva tu habitacion aqui.</h2></header>
                         <div id="section-reserva">
                             <form method="post" id="form-reserva">
-                                <div class="fecha-reserva" id="fecha-llegada">
+                                <div class="fecha-reserva" id="fecha-reserva">
                                     Fecha llegada:
                                     <input type="date" id="input-llegada" class="calendar">
-                                </div>
-                                <div class="fecha-reserva" id="fecha-salida">
+                                    <p></p>
                                     Fecha salida:
                                     <input type="date" id="input-salida" class="calendar">
                                 </div>
+                                <div class="hab-reserva" id="numero-hab-reserva">
+                                    Habitacion <a id="hab-1" class="no-under">1</a>:
+                                    &nbsp;
+                                    <select id="habitacion-select">
+                                        <option id="doble-std">Habitacion Doble (TWIN)</option>
+                                        <option id="doble-del">Habitacion Doble Superior</option>
+                                        <option id="triple">Habitacion Triple</option>
+                                    </select>
+                                    Adultos:
+                                    <select id="num-adultos">
+                                        <option id="1">1</option>
+                                        <option id="2">2</option>
+                                        <option id="3" hidden>3</option>
+                                    </select>
+                                    Niños:
+                                    <select id="num-ninios">
+                                        <option id="1">1</option>
+                                        <option id="2">2</option>
+                                        <option id="3" hidden>3</option>
+                                    </select>
+                                    <a class="button scrolly" alt="plus" onclick="#"><span class="icon fa-plus"></span></a>
+                                </div>
+                                <div class="hab-reserva" id="numero-hab-reserva">
+                                    Habitacion <a id="hab-2" class="no-under">2</a>:
+                                    &nbsp;
+                                    <select id="habitacion-select">
+                                        <option id="doble-std">Habitacion Doble (TWIN)</option>
+                                        <option id="doble-del">Habitacion Doble Superior</option>
+                                        <option id="triple">Habitacion Triple</option>
+                                    </select>
+                                    Adultos:
+                                    <select id="num-adultos">
+                                        <option id="1">1</option>
+                                        <option id="2">2</option>
+                                        <option id="3" hidden>3</option>
+                                    </select>
+                                    Niños:
+                                    <select id="num-ninios">
+                                        <option id="1">1</option>
+                                        <option id="2">2</option>
+                                        <option id="3" hidden>3</option>
+                                    </select>
+                                    <a class="button" alt="plus" onclick="#"><span class="icon fa-plus"></span></a>
+                                </div>
+                                <input type="submit" value="Reserva!" class="submit-right">
+                                
                             </form>
                         </div>
                     </div>
