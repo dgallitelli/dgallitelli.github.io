@@ -7,7 +7,7 @@ function changeZoomPicture(newPic) {
 }
 
 function highlightBG(paramId) {
-    document.getElementById(paramId).css.background = "#000";
+    document.getElementById(paramId).style.background = "#000";
 }
 
 function today() {
@@ -17,11 +17,11 @@ function today() {
     var yyyy = day.getFullYear();
 
     if(dd<10) {
-        dd='0'+dd
+        dd='0'+dd;
     } 
 
     if(mm < 10) {
-        mm='0'+mm
+        mm='0'+mm;
     } 
 
     day = yyyy+'-'+mm+'-'+dd;
@@ -29,20 +29,20 @@ function today() {
 }
 
 function showPrice(paramId) {
-    alert("ciao");
     var dom = document.getElementById(paramId);
-    dom.style.display = "inline";
+    if (dom.style.display == "inline")
+        dom.style.display = "none";
+    else dom.style.display = "inline";
 }
 
-function updateReserva(paramId){
-    alert(paramId);
+function updateReserva(paramId2){
     var select = document.getElementById('habitacion-select');
-    var option, var i=0;
+    var option, i=0;
 
-    for (i, i<select.options.length; i<iLen; i++) {
-      option = select.options[i];
+    for (i=0; i<select.options.length; i++) {
+        option = select.options[i];
 
-      if (option.value == paramId) {
+        if (option.id == paramId2) {
          option.selected = true;
          return;
       } 

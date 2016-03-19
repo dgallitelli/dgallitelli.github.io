@@ -2623,7 +2623,7 @@ ul.horizontal li{
 .one-of-three-col div.hidden{
     /* Problema con il JS che dovrebbe mostrare il div */
     /* Da chiedere il 29/3 */
-    /*display: none;*/
+    display: none;
 }
 
 #nav .nav-reserva{

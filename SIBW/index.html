@@ -168,8 +168,8 @@
                         <p>En nuestras <strong>habitaciones standard</strong> disfrutará de todo el equipamiento y comodidades que su estancia en Granada merece.</p>
                         <div class="hidden" id="hidden-double">
                             <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
-                            <a href="#reserva" onclick="updateReserva('doble-std')">
-                                <input type="button" id="doble-std" value="Reserva ahora por solo 49€/noche!">
+                            <a href="#reserva">
+                                <input type="button" id="doble-std" value="Reserva ahora por solo 79€/noche!" onclick="updateReserva(this.id)">
                             </a>
                         </div>
                     </div>
@@ -180,8 +180,8 @@
                         
                         <div class="hidden" id="hidden-superior">
                             <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
-                            <a onclick="updateReserva('doble-sup')">
-                                <input type="button" id="doble-sup" value="Reserva ahora por solo 59€/noche!" onclick="updateReserva(this.id)">
+                            <a href="#reserva">
+                                <input type="button" id="doble-sup" value="Reserva ahora por solo 89€/noche!" onclick="updateReserva(this.id)">
                             </a>
                         </div>
                     </div>
@@ -192,7 +192,9 @@
                         
                         <div class="hidden" id="hidden-triple">
                             <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
-                            <input type="submit" value="Reserva ahora por solo 69€/noche!">
+                            <a href="#reserva">
+                                <input type="button" id="triple" value="Reserva ahora por solo 115€/noche!" onclick="updateReserva(this.id)">
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -203,35 +205,35 @@
                         <header><h2>¡Disfruta de nuestras promociones!</h2></header>
                         <ul>
                             <li>
-                                <a href="#">
+                                <a id="prom-dos-noches">
                                     <div class="ofertas" id="dos-noches">
                                         <img src="images/fotos/foto8.jpg" >
                                         <h3><strong>DOS NOCHES</strong></h3>
                                         Disfute de un 10% de descuento en estancias de un minimo de dos noches.
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a id="prom-10-porcento">
                                     <div class="ofertas" id="10-porcento">
                                         <img src="images/fotos/foto2.jpg" >
                                         <h3><strong>10% DE DESCUENTO</strong></h3>
                                         Disfute de un 10% de descuento con esta tarifa no reembolsable.
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a id="prom-reserva-anticipada">
                                     <div class="ofertas" id="reserva-anticipada">
                                         <img src="images/fotos/foto10.jpg" >
                                         <h3><strong>RESERVA ANTICIPADA</strong></h3>
                                         Disfute de un 10% de descuento reservando con 21 dias de antelacion.
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a id="prom-doble-tren">
                                     <div class="ofertas" id="doble-tren">
                                         <img src="images/fotos/foto12.jpg" >
                                         <h3><strong>HABITACION DOBLE + TREN TURISTICO</strong></h3>
                                         Dos noches en habitacion estandar, desayuno continental, dos tickets para uso del Tren Turistico de Granada.
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a id="prom-doble-banio">
                                     <div class="ofertas" id="doble-banio">
                                         <img src="images/fotos/foto13.jpg" >
                                         <h3><strong>HABITACION DOBLE + BAÑO ARABE</strong></h3>
@@ -245,14 +247,14 @@
                                         Dos noches en habitacion estandar, desayuno continental, espectaculo de flamenco en "El templo del Flamenco".
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a id="prom-doble-alhambra">
                                     <div class="ofertas" id="doble-alhambra">
                                         <img src="images/fotos/foto15.jpg" >
                                         <h3><strong>HABITACION DOBLE + VISITA GUIADA ALHAMBRA</strong></h3>
                                         Dos noches en habitacion estandar, desayuno continental, visita guiada a la Alhambra.
                                     </div>
                                 </a>
-                                <a href="#">
+                                <a id="prom-doble-tren-flamenco">
                                     <div class="ofertas" id="doble-tren-flamenco">
                                         <img src="images/fotos/foto16.jpg" >
                                         <h3><strong>HABITACION DOBLE + TREN TURISTICO + ESPECTACULO DE FLAMENCO</strong></h3>
@@ -333,13 +335,15 @@
                                     <select id="num-adultos">
                                         <option id="1">1</option>
                                         <option id="2">2</option>
-                                        <option id="3" hidden>3</option>
+                                        <option id="3">3</option>
                                     </select>
                                     Niños:
                                     <select id="num-ninios">
+                                        <option id="0">0</option>
                                         <option id="1">1</option>
                                         <option id="2">2</option>
-                                        <option id="3" hidden>3</option>
+                                        <option id="3">3</option>
+                                        <option id="4">4</option>
                                     </select>
                                     <a class="button scrolly" alt="plus" onclick="#"><span class="icon fa-plus"></span></a>
                                 </div>
