@@ -2603,13 +2603,27 @@ ul.horizontal li{
 
 .one-of-three-col{
     width: 30%;
+    height: auto;
     float: left;
     margin: 0.6em;
     font-size: 15px;
+    background-color: white;
+}
+
+.one-of-three-col div.image{
+    /*position: absolute;
+    bottom: 0;
+    margin: auto;*/
 }
 
 .one-of-three-col img{
     max-width: 100%;
+}
+
+.one-of-three-col div.hidden{
+    /* Problema con il JS che dovrebbe mostrare il div */
+    /* Da chiedere il 29/3 */
+    /*display: none;*/
 }
 
 #nav .nav-reserva{
@@ -2641,6 +2655,7 @@ ul.horizontal li{
     width: 30%;
     height: auto;
     float: left;
+    text-align: right;
     margin: 0.5em;
 }
 
@@ -2670,6 +2685,18 @@ ul.horizontal li{
 
 .form-button{
     padding: 0.3em 0.3em 0.3em 0.3em;
+}
+
+.hab-precio{
+    height: auto;
+    width: auto;
+    float: left;
+    background-color: #8ebebc;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.3col-hidden{
+    visibility: hidden;
 }
 
 .srv-hot-1-HAC,.srv-hot-2-HAC,.srv-hot-2-RMA,.srv-hot-5-HAC,.srv-hot-8-HAC,.srv-hot-9-RMA,.srv-hot-10-RMA,.srv-hot-11-RMA,.srv-hot-13-RMA,.srv-hot-15-HAC,.srv-hot-20-HAC,.srv-hot-22-HAC,.srv-hot-26-HAC,.srv-hot-26-RMA,.srv-hot-28-RMA,.srv-hot-35-HAC,.srv-hot-36-HAC,.srv-hot-37-HAC,.srv-hot-42-HAC,.srv-hot-46-HAC,.srv-hot-48-HAC,.srv-hot-50-RMA,.srv-hot-52-HAC,.srv-hot-53-HAC,.srv-hot-54-HAC,.srv-hot-56-RMA,.srv-hot-58-HAC,.srv-hot-61-RMA,.srv-hot-65-HAC,.srv-hot-66-HAC,.srv-hot-69-RMA,.srv-hot-74-HAC,.srv-hot-76-HAC,.srv-hot-77-HAC,.srv-hot-79-HAC,.srv-hot-91-RMA,.srv-hot-92-RMA,.srv-hot-101-RMA,.srv-hot-105-HAC,.srv-hot-107-RMA,.srv-hot-119-RMA,.srv-hot-123-RMA,.srv-hot-145-HAC,.srv-hot-157-HAC,.srv-hot-159-HAC,.srv-hot-179-HAC,.srv-hot-210-RMA,.srv-hot-221-RMA,.srv-hot-224-HAC,.srv-hot-229-HAC,.srv-hot-251-RMA,.srv-hot-269-HAC,.srv-hot-276-RMA,.srv-hot-277-RMA,.srv-hot-278-RMA,.srv-hot-283-HAC,.srv-hot-350-HAC,.srv-hot-351-RMA,.srv-hot-282-RMA,.srv-hot-284-RMA,.srv-hot-288-RMA,.srv-hot-352-RMA{background:url("../../images/sprites.png") no-repeat}

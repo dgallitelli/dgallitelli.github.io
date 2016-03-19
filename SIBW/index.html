@@ -129,16 +129,21 @@
                 <!-- Mas Info -->
                     <section id="info" class="two">
                         <div class="container">
+                            <header><h2>La estructura</h2></header>
                             <div class="one-of-three-col" id="3col-Hotel">
                                 <p>El hotel le ofrece 25 amplias y luminosas habitaciones repartidas sobre 3 plantas con ascensor. Cada planta del hotel y cada habitación poseen un nombre y encanto propio. Este nombre es una representación de un evento importante en la vida e historia de Granada. No tienen tarjetas magnéticas para abrir las puertas de las habitaciones, preferimos la originalidad que proporciona una tradicional llave.</p>
                                 <!-- Immagine di Hotel Plaza Nueva -->
-                                <img src="images/fotos/foto2.jpg" alt="Plaza Nueva Hotel Pic">
+                                <div class="image">
+                                    <img src="images/fotos/foto2.jpg" alt="Plaza Nueva Hotel Pic">                                
+                                </div>
                             </div>
                             <div class="one-of-three-col" id="3col-Habitaciones">
                                 <p> Que usted sea un amante de la vista externa sobre el incantevole <strong>Alhambra</strong>, o que prefiera un descanso tranquilo sin compromiso, el hotel le ofrece lo que usted mas desea. </p>
                                 <p>Las habitaciones también disponen de un cuarto de baño completo, aire acondicionado, TV, teléfono directo y una caja de seguridad gratuita para su mayor tranquilidad.</p>
                                 <!-- Immagine di Hotel Plaza Nueva -->
-                                <img src="https://images.booking-channel.com/synergy/HTL00004/images_public/HTL00004/galeria/1500/hotel-plaza-nueva-granada-08-habitacion.jpg" alt="Rooms Pic">
+                                <div class="image">
+                                    <img src="https://images.booking-channel.com/synergy/HTL00004/images_public/HTL00004/galeria/1500/hotel-plaza-nueva-granada-08-habitacion.jpg" alt="Rooms Pic">                               
+                                </div>
                             </div>
                             <div class="one-of-three-col" id="3col-Servicios">
                                 <p>La nuestra estructura proporciona varios servicios.</p>
@@ -148,6 +153,49 @@
                             </div>
                         </div>
                     </section>
+                
+                <!-- Habitaciones -->
+                <section id="habitaciones" class="two">
+                    <div class="container">
+                        <header><h2>Las habitaciones</h2></header>
+                        <p>Nuestras habitaciones con vistas a Plaza Nueva y a la Torre de la Vela, que pertenece al recinto de la Alhambra, le permitirán disfrutar de una perspectiva distinta de la ciudad. Disfrute de esta experiencia por un pequeño suplemento.</p> 
+                        <p>Asimismo el hotel dispone de habitaciones interiores, recomendables para personas que desean descansar con la máxima tranquilidad.</p>
+                        <p>Las habitaciones también disponen de un cuarto de baño completo, aire acondicionado, TV, teléfono directo y una caja de seguridad gratuita para su mayor tranquilidad.</p>
+                    </div>
+                    <div class="one-of-three-col" id="3col-twin" onclick="showPrice('hidden-double')">
+                        <!-- Immagine della double -->
+                        <img src="images/fotos/hab/twin.jpg" alt="Hab-Doble-pic">
+                        <p>En nuestras <strong>habitaciones standard</strong> disfrutará de todo el equipamiento y comodidades que su estancia en Granada merece.</p>
+                        <div class="hidden" id="hidden-double">
+                            <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
+                            <a href="#reserva" onclick="updateReserva('doble-std')">
+                                <input type="button" id="doble-std" value="Reserva ahora por solo 49€/noche!">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="one-of-three-col" id="3col-superior" onclick="showPrice('hidden-superior')">
+                        <!-- Immagine della superior -->
+                        <img src="images/fotos/hab/superior.jpg" alt="Hab-Superior-pic">
+                        <p>Disfrute de una magnifica vista de Plaza Nueva y el centro de Granada desde nuestras <strong>habitaciones superiores</strong>.</p>
+                        
+                        <div class="hidden" id="hidden-superior">
+                            <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
+                            <a onclick="updateReserva('doble-sup')">
+                                <input type="button" id="doble-sup" value="Reserva ahora por solo 59€/noche!" onclick="updateReserva(this.id)">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="one-of-three-col" id="3col-triple" onclick="showPrice('hidden-triple')">
+                        <!-- Immagine della triple -->
+                        <img src="images/fotos/hab/triple.jpg" alt="Hab-Triple-pic">
+                        <p>En nuestras <strong>habitaciones triples</strong> podrá disfrutar de sus vacaciones en familia o con amigos en el centro de Granada.</p>
+                        
+                        <div class="hidden" id="hidden-triple">
+                            <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
+                            <input type="submit" value="Reserva ahora por solo 69€/noche!">
+                        </div>
+                    </div>
+                </section>
                 
                 <!-- Promociones -->
                 <section id="promociones" class="three">
@@ -270,7 +318,6 @@
                                 <div class="fecha-reserva" id="fecha-reserva">
                                     Fecha llegada:
                                     <input type="date" id="input-llegada" class="calendar">
-                                    <p></p>
                                     Fecha salida:
                                     <input type="date" id="input-salida" class="calendar">
                                 </div>
@@ -278,9 +325,9 @@
                                     Habitacion <a id="hab-1" class="no-under">1</a>:
                                     &nbsp;
                                     <select id="habitacion-select">
-                                        <option id="doble-std">Habitacion Doble (TWIN)</option>
-                                        <option id="doble-del">Habitacion Doble Superior</option>
-                                        <option id="triple">Habitacion Triple</option>
+                                        <option id="doble-std" selected="false">Habitacion Doble (TWIN)</option>
+                                        <option id="doble-sup" selected="false">Habitacion Doble Superior</option>
+                                        <option id="triple" selected="false">Habitacion Triple</option>
                                     </select>
                                     Adultos:
                                     <select id="num-adultos">
@@ -296,6 +343,7 @@
                                     </select>
                                     <a class="button scrolly" alt="plus" onclick="#"><span class="icon fa-plus"></span></a>
                                 </div>
+                                <!--
                                 <div class="hab-reserva" id="numero-hab-reserva">
                                     Habitacion <a id="hab-2" class="no-under">2</a>:
                                     &nbsp;
@@ -318,6 +366,7 @@
                                     </select>
                                     <a class="button" alt="plus" onclick="#"><span class="icon fa-plus"></span></a>
                                 </div>
+                                -->
                                 <input type="submit" value="Reserva!" class="submit-right">
                                 
                             </form>

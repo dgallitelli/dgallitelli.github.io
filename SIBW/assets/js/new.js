@@ -27,3 +27,24 @@ function today() {
     day = yyyy+'-'+mm+'-'+dd;
     document.getElementById("input-llegada").min=day;
 }
+
+function showPrice(paramId) {
+    alert("ciao");
+    var dom = document.getElementById(paramId);
+    dom.style.display = "inline";
+}
+
+function updateReserva(paramId){
+    alert(paramId);
+    var select = document.getElementById('habitacion-select');
+    var option, var i=0;
+
+    for (i, i<select.options.length; i<iLen; i++) {
+      option = select.options[i];
+
+      if (option.value == paramId) {
+         option.selected = true;
+         return;
+      } 
+    }
+}
