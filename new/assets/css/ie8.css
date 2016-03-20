@@ -1,95 +1,60 @@
 /*
-	Spectral by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Icon */
+/* Basic */
 
-	.icon.major {
-		border: none;
-	}
-
-		.icon.major:before {
-			font-size: 3em;
-		}
-
-/* Form */
-
-	label {
-		color: #2E3842;
-	}
-
+	code,
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
 	select,
-	textarea {
-		border: solid 1px #dfdfdf;
-	}
-
-/* Button */
-
+	textarea,
+	.box,
+	.image,
+	.image img,
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	button,
 	.button {
-		border: solid 2px #dfdfdf;
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-		input[type="submit"].special,
-		input[type="reset"].special,
-		input[type="button"].special,
-		button.special,
-		.button.special {
-			border: 0 !important;
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		line-height: 2.75em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		-moz-appearance: normal;
+		-webkit-appearance: normal;
+		-ms-appearance: normal;
+		appearance: normal;
+	}
+
+		input[type="checkbox"] + label,
+		input[type="radio"] + label {
+			padding: 0 0 0 1.5em;
 		}
 
-/* Page Wrapper + Menu */
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				display: none;
+			}
 
-	#menu {
-		display: none;
+/* Button */
+
+	input[type="submit"].alt,
+	input[type="reset"].alt,
+	input[type="button"].alt,
+	.button.alt {
+		border: solid 2px #e4e4e4;
 	}
-
-	body.is-menu-visible #menu {
-		display: block;
-	}
-
-/* Header */
-
-	#header nav > ul > li > a.menuToggle:after {
-		display: none;
-	}
-
-/* Banner + Wrapper (style4) */
-
-	#banner,
-	.wrapper.style4 {
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
-	}
-
-		#banner:before,
-		.wrapper.style4:before {
-			display: none;
-		}
-
-/* Banner */
-
-	#banner .more {
-		height: 4em;
-	}
-
-		#banner .more:after {
-			display: none;
-		}
-
-/* Main */
-
-	#main > header {
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
-	}
-
-		#main > header:before {
-			display: none;
-		}
