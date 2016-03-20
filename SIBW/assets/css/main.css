@@ -2608,22 +2608,33 @@ ul.horizontal li{
     margin: 0.6em;
     font-size: 15px;
     background-color: white;
+    border: 1px solid #8ebebc;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .one-of-three-col div.image{
-    /*position: absolute;
-    bottom: 0;
-    margin: auto;*/
+    max-width: 95%;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .one-of-three-col img{
-    max-width: 100%;
+    border-radius: 2px 2px 2px 2px;
 }
 
 .one-of-three-col div.hidden{
-    /* Problema con il JS che dovrebbe mostrare il div */
-    /* Da chiedere il 29/3 */
     display: none;
+}
+
+.one-of-three-col h3{
+    background-color: #8ebebc;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 62px;
+    height: 60px;
 }
 
 #nav .nav-reserva{
@@ -2697,6 +2708,11 @@ ul.horizontal li{
 
 .3col-hidden{
     visibility: hidden;
+}
+
+a.more-info-click{
+    border-bottom: none;
+    font-style: italic;
 }
 
 .srv-hot-1-HAC,.srv-hot-2-HAC,.srv-hot-2-RMA,.srv-hot-5-HAC,.srv-hot-8-HAC,.srv-hot-9-RMA,.srv-hot-10-RMA,.srv-hot-11-RMA,.srv-hot-13-RMA,.srv-hot-15-HAC,.srv-hot-20-HAC,.srv-hot-22-HAC,.srv-hot-26-HAC,.srv-hot-26-RMA,.srv-hot-28-RMA,.srv-hot-35-HAC,.srv-hot-36-HAC,.srv-hot-37-HAC,.srv-hot-42-HAC,.srv-hot-46-HAC,.srv-hot-48-HAC,.srv-hot-50-RMA,.srv-hot-52-HAC,.srv-hot-53-HAC,.srv-hot-54-HAC,.srv-hot-56-RMA,.srv-hot-58-HAC,.srv-hot-61-RMA,.srv-hot-65-HAC,.srv-hot-66-HAC,.srv-hot-69-RMA,.srv-hot-74-HAC,.srv-hot-76-HAC,.srv-hot-77-HAC,.srv-hot-79-HAC,.srv-hot-91-RMA,.srv-hot-92-RMA,.srv-hot-101-RMA,.srv-hot-105-HAC,.srv-hot-107-RMA,.srv-hot-119-RMA,.srv-hot-123-RMA,.srv-hot-145-HAC,.srv-hot-157-HAC,.srv-hot-159-HAC,.srv-hot-179-HAC,.srv-hot-210-RMA,.srv-hot-221-RMA,.srv-hot-224-HAC,.srv-hot-229-HAC,.srv-hot-251-RMA,.srv-hot-269-HAC,.srv-hot-276-RMA,.srv-hot-277-RMA,.srv-hot-278-RMA,.srv-hot-283-HAC,.srv-hot-350-HAC,.srv-hot-351-RMA,.srv-hot-282-RMA,.srv-hot-284-RMA,.srv-hot-288-RMA,.srv-hot-352-RMA{background:url("../../images/sprites.png") no-repeat}
