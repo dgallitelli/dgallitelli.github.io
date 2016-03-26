@@ -179,9 +179,9 @@
                             <p>En nuestras <strong>habitaciones standard</strong> disfrutará de todo el equipamiento y comodidades que su estancia en Granada merece.</p>
                             <a class="more-info-click" onclick="showPrice('hidden-double')">Pincha aqui para mas informaciones!</a>
                             <div class="hidden" id="hidden-double">
-                                <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
+                                <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
                                 <a href="#reserva">
-                                    <input type="button" id="doble-std" value="Reserva ahora por solo 79€/noche!" onclick="updateReserva(this.id)">
+                                    <input type="button" id="doble-std" class="button-hidden-price" value="Solo 79€/noche!" onclick="updateReserva(this.id)">
                                 </a>
                             </div>
                         </div>
@@ -197,9 +197,9 @@
                             <a class="more-info-click" onclick="showPrice('hidden-superior')">Pincha aqui para mas informaciones!</a>
 
                             <div class="hidden" id="hidden-superior">
-                                <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
+                                <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
                                 <a href="#reserva">
-                                    <input type="button" id="doble-sup" value="Reserva ahora por solo 89€/noche!" onclick="updateReserva(this.id)">
+                                    <input type="button" id="doble-sup" class="button-hidden-price" value="Solo 89€/noche!" onclick="updateReserva(this.id)">
                                 </a>
                             </div>
                         </div>
@@ -215,9 +215,9 @@
                             <a class="more-info-click" onclick="showPrice('hidden-triple')">Pincha aqui para mas informaciones!</a>
 
                             <div class="hidden" id="hidden-triple">
-                                <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><br><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
+                                <ul class="horizontal"><li class="srv-hot-107-RMA"></li><li class="srv-hot-11-RMA"></li><li class="srv-hot-123-RMA"></li><li class="srv-hot-2-RMA"></li><li class="srv-hot-210-RMA"></li><li class="srv-hot-22-RMA"></li><li class="srv-hot-221-RMA"></li><li class="srv-hot-26-RMA"></li><li class="srv-hot-50-RMA"></li><li class="srv-hot-92-RMA"></li></ul>
                                 <a href="#reserva">
-                                    <input type="button" id="triple" value="Reserva ahora por solo 115€/noche!" onclick="updateReserva(this.id)">
+                                    <input type="button" id="triple" class="button-hidden-price" value="Solo 115€/noche!" onclick="updateReserva(this.id)">
                                 </a>
                             </div>
                         </div>
@@ -300,38 +300,43 @@
 								<h2>Contactos y Mapa</h2>
 							</header>
 
-                            <div id="all_left" class="map">
-                                <!-- Mapa -->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.975876819737!2d-3.598489685200726!3d37.17704425409635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb8cb9390e1%3A0x9253186efccf153a!2sHotel+Plaza+Nueva!5e0!3m2!1sit!2sit!4v1458502640304" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div class="container">
+                                <div id="all_left" class="map">
+                                    <!-- Mapa -->
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.975876819737!2d-3.598489685200726!3d37.17704425409635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb8cb9390e1%3A0x9253186efccf153a!2sHotel+Plaza+Nueva!5e0!3m2!1sit!2sit!4v1458502640304" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                                <div id="all_right" class="map">
+                                    <h4><strong>Como contactarnos:</strong></h4>
+                                    <!--- Info e contatti -->
+                                    <ul class="side-text">
+                                        <li>Dirección: Imprenta, nº 2</li>
+                                        <li>Localidad: Granada</li>
+                                        <li>Provincia: Granada</li>
+                                        <li>País: España</li>
+                                        <li>Teléfono: +34 958 215 273</li>
+                                        <li>Fax: +34 958 225 765</li>
+                                        <li>Email: info@hotel-plazanueva.com</li>
+                                        <li>Número de registro del hotel en la consejería de turismo de Andalucía: H/GR/01181</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div id="all_right" class="map">
-                                <h4><strong>Como contactarnos:</strong></h4>
-                                <!--- Info e contatti -->
-                                <ul class="side-text">
-                                    <li>Dirección: Imprenta, nº 2</li>
-                                    <li>Localidad: Granada</li>
-                                    <li>Provincia: Granada</li>
-                                    <li>País: España</li>
-                                    <li>Teléfono: +34 958 215 273</li>
-                                    <li>Fax: +34 958 225 765</li>
-                                    <li>Email: info@hotel-plazanueva.com</li>
-                                    <li>Número de registro del hotel en la consejería de turismo de Andalucía: H/GR/01181</li>
-                                </ul>
-                            </div>
-                            <!-- 
+                            
 							<form method="post" action="#">
+                                <div class="row">
+                                    <p>¡Contactanos para cualquiera duta!</p>
+                                </div>
 								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="4u 12u$(mobile)"><input type="text" name="name" placeholder="Nombre y Appellidos" /></div>
+									<div class="4u 12u$(mobile)"><input type="text" name="phone" placeholder="Telefono" /></div>
+									<div class="4u$ 12u$(mobile)"><input id="form-email" type="email" name="email" placeholder="Email" onkeyup="validateEmail(this.value, this.id)" /></div>
 									<div class="12u$">
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="12u$">
-										<input type="submit" value="Send Message" />
+										<input type="submit" value="Enviar" />
 									</div>
 								</div>
 							</form>
-                            -->
 
 						</div>
 					</section>

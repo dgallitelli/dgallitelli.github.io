@@ -48,3 +48,11 @@ function updateReserva(paramId2){
       } 
     }
 }
+
+function validateEmail(email, idElement) {
+    // Compliant to RFC2282
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var isMailCorrect = re.test(email), formEmail = document.getElementById(idElement);
+    if (!isMailCorrect) formEmail.style.color = "red";
+    else formEmail.style.color = "green";
+}
