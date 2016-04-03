@@ -112,7 +112,7 @@
             <section id="info" class="two">
                 <div class="container">
                     <header><h2>Los que va a encontrar en el nuestro hotel</h2></header>
-                    <div id = "3col-container">
+                    <div class="3col-container" id="3col-info">
                         <div class="one-of-three-col" id="3col-Hotel">
                             <header><h3>UNA ESTRUCTURA AGRADABLE</h3></header>
                             <!-- Immagine di Hotel Plaza Nueva -->
@@ -153,7 +153,7 @@
                     <p>Nuestras habitaciones con vistas a Plaza Nueva y a la Torre de la Vela, que pertenece al recinto de la Alhambra, le permitirán disfrutar de una perspectiva distinta de la ciudad. Disfrute de esta experiencia por un pequeño suplemento.</p> 
                     <p>Asimismo el hotel dispone de habitaciones interiores, recomendables para personas que desean descansar con la máxima tranquilidad.</p>
                     <p>Las habitaciones también disponen de un cuarto de baño completo, aire acondicionado, TV, teléfono directo y una caja de seguridad gratuita para su mayor tranquilidad.</p>
-                    <div id="3col-container">
+                    <div class="3col-container" id="3col-hab">
                         <div class="one-of-three-col" id="3col-twin">
                             <header><h3>HABITACION DOBLE TWIN</h3></header>
                             <!-- Immagine della double -->
@@ -225,6 +225,19 @@
             <section id="promociones" class="three">
                 <div class="container">
                     <header><h2>¡Disfruta de nuestras promociones!</h2></header>
+                    
+                    <div class="new-slider">
+                        <button class="slider next"  onclick="updateSlider('next')"><img src="images/rightarrow.png"></button>
+                        <button class="slider prev"  onclick="updateSlider('prev')"><img src="images/leftarrow.png"></button>
+                        <div class="image-slider">
+                            <img id="promSlider" src="images/fotos/slider/1.jpg">
+                        </div>
+                        <span>
+                            <h3><strong>DOS NOCHES</strong></h3>
+                            Disfute de un 10% de descuento en estancias de un minimo de dos noches.
+                        </span>
+                    </div>
+                    
                     <ul>
                         <li>
                             <a id="prom-dos-noches">

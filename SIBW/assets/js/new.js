@@ -56,3 +56,14 @@ function validateEmail(email, idElement) {
     if (!isMailCorrect) formEmail.style.color = "red";
     else formEmail.style.color = "green";
 }
+
+
+function updateSlider(sentido) {
+    var numeroProm = 8;
+    var imageSrc = document.getElementById("promSlider").src;
+    var temp = imageSrc.split("images/fotos/slider/");
+    var myValue = parseInt(temp[temp.length-1].split("."));
+    if (sentido == "next") myValue = (myValue+1) % numeroProm;
+    else myValue= (myValue-1) % numeroProm;
+    document.getElementById("promSlider").src = "images/fotos/slider" + myValue + ".jpg";
+}
