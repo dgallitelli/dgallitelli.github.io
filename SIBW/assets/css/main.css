@@ -2619,7 +2619,6 @@ ul.horizontal li{
     background-color: white;
     border: 1px solid #8ebebc;
     border-radius: 5px 5px 5px 5px;
-    /*position:relative;*/
 }
 
 .one-of-three-col div.image{
@@ -2724,7 +2723,7 @@ a.more-info-click{
     border-bottom: none;
     font-style: italic;
     /*bottom: 0;
-    left: 0;
+    transform: translate(50%);
     position: absolute;*/
 }
 
