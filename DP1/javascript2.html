@@ -47,13 +47,22 @@
       </section>
       <section id="ex523">
         <h3>Ex 5.2.3</h3>
-        <form>
-          <textarea id="ex523value1" placeholder="Insert positive integer value1" cols="10" rows="1" onblur="checkPositiveInt(this.id)"></textarea>
-          <textarea id="ex523value2" placeholder="Insert positive integer value2" cols="10" rows="1" onblur="checkPositiveInt(this.id)"></textarea>
+          <textarea id="ex523value1" placeholder="Insert positive integer value1" value="0" cols="10" rows="1" onblur="checkPositiveInt(this.id)" onfocus="clearValue(this.id)"></textarea>
+          <textarea id="ex523value2" placeholder="Insert positive integer value2" value="0" cols="10" rows="1" onblur="checkPositiveInt(this.id)" onfocus="clearValue(this.id)"></textarea>
           <button onclick="ex523()">Sum it!</button>
-        </form>
         <p id="ex523result" class="hidden"></p>
       </section>
+			<section id="ex524">
+				<h3>Ex 5.2.4</h3>
+        <textarea id="ex524value1" placeholder="Insert positive integer value1" cols="10" rows="1" onblur="checkPositiveInt2(this.id)" onfocus="clearValue(this.id)"></textarea>
+        <textarea id="ex524value2" placeholder="Insert positive integer value2" cols="10" rows="1" onblur="checkPositiveInt2(this.id)" onfocus="clearValue(this.id)"></textarea>
+      	<p id="ex524result" class="">The sum value is: 0</p>
+			</section>
+			<section id="ex525">
+				<h3>Ex 5.2.5</h3>
+				<textarea id="ex525year" placeholder="Insert a A.D. year (0+)" cols="50" rows="1" onchange="ex525()" onfocus="clearValue(this.id)"></textarea>
+				<p id="christmasDay" class="hidden">Christmas day will be on </p>
+			</section>
     </article>
 
     <footer class="stay_bottom">
