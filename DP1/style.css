@@ -105,7 +105,7 @@ article.exams{
   height:auto;
 }
 article.exams table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 	width: 94vw;
 	margin: 1vw;
 	overflow: hidden;
@@ -114,7 +114,7 @@ article.exams table td, article.exams table th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-	color: black;
+	  color: black;
 }
 article.exams table thead tr td{
 	color: white;
@@ -132,6 +132,9 @@ article.exams table tbody tr td.rejected {
 	color: red;
 }
 
+article.CV table.CV tr td{
+  text-align: center;
+}
 article.javascript{
 	width: auto;
 	height: auto;
@@ -152,6 +155,38 @@ article.javascript section.js_loading div img{
 }
 article.javascript section.js_loaded{
 	display: none;
+}
+
+table.coolTable{
+  border-collapse: collapse;
+	width: 94%;
+	margin: 1vw;
+	overflow: hidden;
+}
+table.coolTable tr{
+  width: 100%;
+}
+table.coolTable td, table.coolTable th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  color: black;
+}
+table.coolTable thead tr td{
+	color: white;
+  text-align: center;
+}
+table.coolTable thead tr td, table.coolTable tbody tr td{
+	text-align: center;
+}
+table.coolTable tbody tr:nth-child(even) {
+    background-color: #dddddd;
+}
+table.coolTable tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.hidden{
+  display: none;
 }
 
 /* End of Article Section*/

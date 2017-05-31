@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<script src="scripts/myFunctions2.js"></script>
+
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<title> Javascript </title>
+	</head>
+
+	<body>
+		<header>
+		</header>
+		<nav>
+			<div class="header_bar">
+				<ul class="list_header">
+					<li>
+						<a href="./index.html" class="h_bar_link">
+							<img src="http://haiquanbinhduong.gov.vn/Themes/style_portal_1.1/img/menu/icon-home.gif" alt="Home" />
+						</a>
+					</li>
+					<li>
+						<a href="./CV.html" class="h_bar_link">CV</a>
+					</li>
+					<li><a href="./exams.html" class="h_bar_link">Exams</a></li>
+					<li><a href="./javascript.html" class="h_bar_link">Javascript</a></li>
+					<li><a href="./javascript2.html" class="h_bar_link">Javascript2</a></li>
+				</ul>
+			</div>
+		</nav>
+
+    <article class="javascript">
+      <section id="ex521">
+        <h3>Ex 5.2.1</h3>
+        <textarea id="textEx521" placeholder="Insert text here." cols="50" rows="1"></textarea>
+        <button onclick="ex521()">Print It!</button>
+      </section>
+      <section id="ex522">
+        <h3>Ex 5.2.2 - Choose a background color</h3>
+        <form>
+          <input type="radio" name="bg-color" value="Red" id="radio-set-bg-color-red" onclick="ex522(this.value)"/>Red<br />
+          <input type="radio" name="bg-color" value="Green" id="radio-set-bg-color-green" onclick="ex522(this.value)"/>Green <br />
+          <input type="radio" name="bg-color" value="Blue" id="radio-set-bg-color-blue" onclick="ex522(this.value)"/>Blue <br />
+          <input type="radio" name="bg-color" value="Yellow" id="radio-set-bg-color-yellow" onclick="ex522(this.value)"/>Yellow <br />
+          <input type="radio" name="bg-color" value="White" id="radio-set-bg-color-white" onclick="ex522(this.value)"/>White <br />
+        </form>
+      </br/>
+      </section>
+      <section id="ex523">
+        <h3>Ex 5.2.3</h3>
+        <form>
+          <textarea id="ex523value1" placeholder="Insert positive integer value1" cols="10" rows="1" onblur="checkPositiveInt(this.id)"></textarea>
+          <textarea id="ex523value2" placeholder="Insert positive integer value2" cols="10" rows="1" onblur="checkPositiveInt(this.id)"></textarea>
+          <button onclick="ex523()">Sum it!</button>
+        </form>
+        <p id="ex523result" class="hidden"></p>
+      </section>
+    </article>
+
+    <footer class="stay_bottom">
+      <div class = "footer">
+        <div class="logo">
+          <img class="logo" src="http://security.polito.it/img/polito.gif" alt="logo"/>
+        </div>
+        <div class="copyrights">
+            Davide Gallitelli <br />
+            s241521[at]studenti.polito.it <br />
+            All rights reserved.
+        </div>
+        <div class="contacts">
+
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
