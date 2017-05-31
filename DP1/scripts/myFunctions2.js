@@ -83,3 +83,44 @@ function ex525(){
   myPDay.innerHTML = "Christmas day will be on "+christmas;
   myPDay.style.display = "block";
 }
+
+function greatest(myID){
+  // Compute how many children of type textarea are in the form (#children - 1 [button])
+  var numberOfExtraElements = 3;
+  var brokenValue = false, valuesFromForm = [], count = 0;
+  // Check if all of them have proper values
+  var myChild = document.getElementById(myID).children;
+  for (var i = 0; i < myChild.length-numberOfExtraElements; i++){
+    var value = parseInt(myChild.item(i).value,10);
+    // alert("Reading value = "+value+" element = "+i);
+    if (isNaN(value)){
+      alert("Incorrent value entered. Please fix it.");
+      clearValue(myChild.item(i).getAttribute("id"));
+      myChild.item(i).focus();
+      brokenValue = true;
+      break;
+    } else {
+      valuesFromForm[count] = value;
+      count++;
+    }
+  }
+  if (brokenValue == true)
+    return;
+  // Here if all children have proper values. Look for the greatest!
+  var maxValue = 0;
+  for (var i = 0; i < valuesFromForm.length; i++){
+    if (valuesFromForm[i] > maxValue)
+      maxValue = valuesFromForm[i];
+  }
+  // Print it!
+  var myString = "The greatest number of them all is: "+maxValue;
+  alert(myString);
+}
+
+function cleanForm(myID){
+  var numberOfExtraElements = 3;
+  var myChild = document.getElementById(myID).children;
+  for (var i = 0; i < myChild.length-numberOfExtraElements; i++){
+    clearValue(myChild.item(i).getAttribute("id"));
+  }
+}

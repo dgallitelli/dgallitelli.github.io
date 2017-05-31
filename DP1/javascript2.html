@@ -63,6 +63,19 @@
 				<textarea id="ex525year" placeholder="Insert a A.D. year (0+)" cols="50" rows="1" onchange="ex525()" onfocus="clearValue(this.id)"></textarea>
 				<p id="christmasDay" class="hidden">Christmas day will be on </p>
 			</section>
+			<section id="ex526">
+				<h3>Ex 5.2.6</h3>
+				<form action="#" id="formEx526" onsubmit="greatest(this.id)">
+					<textarea id="ex526value1" rows="1" placeholder="Insert value:"></textarea>
+					<textarea id="ex526value2" rows="1" placeholder="Insert value:"></textarea>
+					<textarea id="ex526value3" rows="1" placeholder="Insert value:"></textarea>
+					<textarea id="ex526value4" rows="1" placeholder="Insert value:"></textarea>
+					<textarea id="ex526value5" rows="1" placeholder="Insert value:"></textarea>
+					<br />
+					<input type="submit" value="Greatest" />
+					<input type="button" onclick="cleanForm(this.parentNode.id)" value="Cancel" />
+				</form>
+			</section>
     </article>
 
     <footer class="stay_bottom">
