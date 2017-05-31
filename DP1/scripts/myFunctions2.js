@@ -124,3 +124,18 @@ function cleanForm(myID){
     clearValue(myChild.item(i).getAttribute("id"));
   }
 }
+
+function ex527(myID){
+  var prodDivElem = document.querySelector("section#"+myID).children.item(0);
+  var selectedValues = prodDivElem.querySelectorAll("select");
+  var accumulator = 0;
+  for (var i = 0; i < selectedValues.length; i++)
+    accumulator += parseInt(selectedValues[i].value);
+  var myTextAreaResult = document.querySelector("section#"+myID).children[0].children[1].children[0];
+  myTextAreaResult.innerHTML = accumulator;
+  myTextAreaResult.value = accumulator;
+}
+
+function resetForm(formID){
+
+}

@@ -76,6 +76,31 @@
 					<input type="button" onclick="cleanForm(this.parentNode.id)" value="Cancel" />
 				</form>
 			</section>
+			<section id="ex527">
+				<form action="#" id="formEx527">
+					<div id="prodNumDiv" class="half-page-div">
+						Floppy-Disk:
+						<select name="numberOfProd1" id="numberOfProd1">
+							<option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+						</select>
+						<br />
+						CD-R:
+						<select name="numberOfProd2" id="numberOfProd2">
+							<option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+						</select>
+						<br />
+						DVD-R:
+						<select name="numberOfProd3" id="numberOfProd3">
+							<option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+						</select>
+					</div>
+					<div id="totAndReset" class="half-page-div">
+						<textarea id="ex527result" rows="1" value="0" disabled>0</textarea><br />
+						<input type="button" value="Total" onclick="ex527('ex527')"/>
+						<input type="button" onclick="resetForm(this.parentNode.parentNode.id)" value="Reset" />
+					</div>
+				</form>
+			</section>
     </article>
 
     <footer class="stay_bottom">
