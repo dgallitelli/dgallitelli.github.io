@@ -126,16 +126,21 @@ function cleanForm(myID){
 }
 
 function ex527(myID){
+	var prices = [0.5, 1.0, 2.0];
   var prodDivElem = document.querySelector("section#"+myID).children.item(0);
   var selectedValues = prodDivElem.querySelectorAll("select");
   var accumulator = 0;
   for (var i = 0; i < selectedValues.length; i++)
-    accumulator += parseInt(selectedValues[i].value);
+    accumulator += parseInt(selectedValues[i].value)*prices[i];
   var myTextAreaResult = document.querySelector("section#"+myID).children[0].children[1].children[0];
   myTextAreaResult.innerHTML = accumulator;
   myTextAreaResult.value = accumulator;
 }
 
 function resetForm(formID){
-
+	var getFormElem = document.querySelector("#"+formID);
+	var selectedValues = getFormElem.querySelectorAll("select");
+	for (var i = 0; i < selectedValues.length; i++)
+		selectedValues[i].value = "0";
+	ex527('ex527');
 }

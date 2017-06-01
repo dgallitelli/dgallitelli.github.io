@@ -5,8 +5,13 @@ body{
   margin: 0;
   background-color: white;
   color: white;
+  height: 100%;
 }
 
+#container{
+    position: relative;
+    min-height: 100%;
+}
 
 .title{
   font-size: 36px;
@@ -64,6 +69,11 @@ body{
 /* End of Header Section */
 
 /* Article Section */
+
+#article-container{
+	margin-bottom: 151px;
+	height: auto;
+}
 
 article{
   background-color: #212121;
@@ -136,12 +146,12 @@ article.CV table.CV tr td{
   text-align: center;
 }
 article.javascript{
-	width: auto;
+	width: 94%;
 	height: auto;
 }
 article.javascript section{
-	width: 94vw;
-	margin: 1vw;
+	width: 98%;
+	margin: 1%;
 }
 article.javascript section.js_loading{
 	display: block;
@@ -160,7 +170,7 @@ article.javascript section.js_loaded{
 table.coolTable{
   border-collapse: collapse;
 	width: 94%;
-	margin: 1vw;
+	margin: 3%;
 	overflow: hidden;
 }
 table.coolTable tr{
@@ -187,6 +197,12 @@ table.coolTable tbody tr:nth-child(odd) {
 
 .hidden{
   display: none;
+}
+
+.half-page-div{
+	float: left;
+	width: 48%;
+	margin: 1%;
 }
 
 /* End of Article Section*/
@@ -219,15 +235,16 @@ table.coolTable tbody tr:nth-child(odd) {
   background-color: #212121;
   position: fixed;
   bottom: 0px;
-  height: auto;
+  left: 0;
+  height: 121px;
   width: 100%;
 }
 
 .footer{
 	border-top-style: solid;
 	border-top-color: red;
-  overflow: hidden;
-  height: auto;
+  	overflow: hidden;
+  	height: auto;
 }
 
 div.logo{
