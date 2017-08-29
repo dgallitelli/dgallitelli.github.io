@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<script src="scripts/myFunctions2.js"></script>
+
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<title> Javascript </title>
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+			</header>
+			<nav>
+				<div class="header_bar">
+					<ul class="list_header">
+						<li>
+							<a href="./index.html" class="h_bar_link">
+								<img src="http://haiquanbinhduong.gov.vn/Themes/style_portal_1.1/img/menu/icon-home.gif" alt="Home" />
+							</a>
+						</li>
+						<li>
+							<a href="./CV.html" class="h_bar_link">CV</a>
+						</li>
+						<li><a href="./exams.html" class="h_bar_link">Exams</a></li>
+						<li><a href="./javascript.html" class="h_bar_link">Javascript</a></li>
+						<li><a href="./javascript2.html" class="h_bar_link">Javascript2</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div id="article-container">
+				<article class="javascript">
+					<section id="ex521">
+						<h3>Ex 5.2.1</h3>
+						<textarea id="textEx521" placeholder="Insert text here." cols="50" rows="1"></textarea>
+						<button onclick="ex521()">Print It!</button>
+					</section>
+					<section id="ex522">
+							<h3>Ex 5.2.2 - Choose a background color</h3>
+							<form>
+								<input type="radio" name="bg-color" value="Red" id="radio-set-bg-color-red" onclick="ex522(this.value)"/>Red<br />
+								<input type="radio" name="bg-color" value="Green" id="radio-set-bg-color-green" onclick="ex522(this.value)"/>Green <br />
+								<input type="radio" name="bg-color" value="Blue" id="radio-set-bg-color-blue" onclick="ex522(this.value)"/>Blue <br />
+								<input type="radio" name="bg-color" value="Yellow" id="radio-set-bg-color-yellow" onclick="ex522(this.value)"/>Yellow <br />
+								<input type="radio" name="bg-color" value="White" id="radio-set-bg-color-white" onclick="ex522(this.value)"/>White <br />
+							</form>
+							</br/>
+						</section>
+					<section id="ex523">
+						<h3>Ex 5.2.3</h3>
+						<textarea id="ex523value1" placeholder="Insert positive integer value1" value="0" cols="10" rows="1" onblur="checkPositiveInt(this.id)" onfocus="clearValue(this.id)"></textarea>
+						<textarea id="ex523value2" placeholder="Insert positive integer value2" value="0" cols="10" rows="1" onblur="checkPositiveInt(this.id)" onfocus="clearValue(this.id)"></textarea>
+						<button onclick="ex523()">Sum it!</button>
+						<p id="ex523result" class="hidden"></p>
+					</section>
+					<section id="ex524">
+						<h3>Ex 5.2.4</h3>
+						<textarea id="ex524value1" placeholder="Insert positive integer value1" cols="10" rows="1" onblur="checkPositiveInt2(this.id)" onfocus="clearValue(this.id)"></textarea>
+						<textarea id="ex524value2" placeholder="Insert positive integer value2" cols="10" rows="1" onblur="checkPositiveInt2(this.id)" onfocus="clearValue(this.id)"></textarea>
+						<p id="ex524result" class="">The sum value is: 0</p>
+					</section>
+					<section id="ex525">
+						<h3>Ex 5.2.5</h3>
+						<textarea id="ex525year" placeholder="Insert a A.D. year (0+)" cols="50" rows="1" onchange="ex525()" onfocus="clearValue(this.id)"></textarea>
+						<p id="christmasDay" class="hidden">Christmas day will be on </p>
+					</section>
+					<section id="ex526">
+						<h3>Ex 5.2.6</h3>
+						<form action="#" id="formEx526" onsubmit="greatest(this.id)">
+							<textarea id="ex526value1" rows="1" placeholder="Insert value:"></textarea>
+							<textarea id="ex526value2" rows="1" placeholder="Insert value:"></textarea>
+							<textarea id="ex526value3" rows="1" placeholder="Insert value:"></textarea>
+							<textarea id="ex526value4" rows="1" placeholder="Insert value:"></textarea>
+							<textarea id="ex526value5" rows="1" placeholder="Insert value:"></textarea>
+							<br />
+							<input type="submit" value="Greatest" />
+							<input type="button" onclick="cleanForm(this.parentNode.id)" value="Cancel" />
+						</form>
+					</section>
+					<section id="ex527">
+						<form action="#" id="formEx527">
+							<div id="prodNumDiv" class="half-page-div">
+								Floppy-Disk:
+								<select name="numberOfProd1" id="numberOfProd1">
+									<option selected>0</option> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
+								</select>
+								<br />
+								CD-R:
+								<select name="numberOfProd2" id="numberOfProd2">
+									<option selected>0</option> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
+								</select>
+								<br />
+								DVD-R:
+								<select name="numberOfProd3" id="numberOfProd3">
+									<option selected>0</option> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
+								</select>
+							</div>
+							<div id="totAndReset" class="half-page-div">
+								<textarea id="ex527result" rows="1" value="0" disabled>0</textarea><br />
+								<input type="button" value="Total" onclick="ex527('ex527')"/>
+								<input type="button" value="Reset" onclick="resetForm('formEx527')" />
+							</div>
+						</form>
+					</section>
+				</article>
+			</div>
+			<div id="footer-container" class="stay_bottom">
+		    	<footer class="stay_bottom">
+					<div class = "footer">
+						<div class="logo">
+							<img class="logo" src="http://security.polito.it/img/polito.gif" alt="logo"/>
+						</div>
+						<div class="copyrights">
+							Davide Gallitelli <br />
+							s241521[at]studenti.polito.it <br />
+							All rights reserved.
+						</div>
+						<div class="contacts"> </div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+ 	</body>
+
+</html>

@@ -1,0 +1,278 @@
+/* Body Section */
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: white;
+  height: 100%;
+}
+
+#container{
+    position: relative;
+    min-height: 100%;
+}
+
+.title{
+  font-size: 36px;
+  color: #212121;
+  text-align: center;
+}
+
+/* Header Section */
+
+.my_header{
+  width: 100vw;
+  overflow: hidden;
+  height: 45px;
+  position: relative;
+}
+
+.header_bar{
+  height: auto;
+  width: 100vw;
+  display: table-row-group;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  background-color: #212121;
+}
+
+.list_header{
+  height: auto;
+  width: inherit;
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding-left: 0;
+}
+
+.list_header li{
+  height: inherit;
+  display: inline;
+  margin: 0.7em;
+  font-size: 1.7em;
+  vertical-align: middle;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.list_header a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.list_header li img{
+  height: 30px;
+}
+
+/* End of Header Section */
+
+/* Article Section */
+
+#article-container{
+	margin-bottom: 151px;
+	height: auto;
+}
+
+article{
+  background-color: #212121;
+  font-family: sans-serif;
+  float: left;
+  margin-top: 1em;
+  margin-left: 2%;
+  border-radius: 5px;
+}
+
+.main_article{
+  width:75%;
+  height:auto;
+}
+.main_article section{
+  margin: 10px;
+  /*background-color: white;
+  border-radius: 15px;*/
+}
+.main_article section h2{
+  margin: 10px;
+}
+.main_article section p{
+  margin:10px;
+}
+
+article.CV{
+  width: auto;
+  height: auto;
+}
+article.CV h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+article.exams{
+  width: auto;
+  height:auto;
+}
+article.exams table {
+  border-collapse: collapse;
+	width: 94vw;
+	margin: 1vw;
+	overflow: hidden;
+}
+article.exams table td, article.exams table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+	  color: black;
+}
+article.exams table thead tr td{
+	color: white;
+}
+article.exams table tbody tr:nth-child(even) {
+    background-color: #dddddd;
+}
+article.exams table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+article.exams table tbody tr td.approved {
+	color: green;
+}
+article.exams table tbody tr td.rejected {
+	color: red;
+}
+
+article.CV table.CV tr td{
+  text-align: center;
+}
+article.javascript{
+	width: 94%;
+	height: auto;
+}
+article.javascript section{
+	width: 98%;
+	margin: 1%;
+}
+article.javascript section.js_loading{
+	display: block;
+}
+article.javascript section.js_loading div{
+	text-align: center;
+}
+article.javascript section.js_loading div img{
+	width: 200px;
+	height: 200px;
+}
+article.javascript section.js_loaded{
+	display: none;
+}
+
+table.coolTable{
+  border-collapse: collapse;
+	width: 94%;
+	margin: 3%;
+	overflow: hidden;
+}
+table.coolTable tr{
+  width: 100%;
+}
+table.coolTable td, table.coolTable th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  color: black;
+}
+table.coolTable thead tr td{
+	color: white;
+  text-align: center;
+}
+table.coolTable thead tr td, table.coolTable tbody tr td{
+	text-align: center;
+}
+table.coolTable tbody tr:nth-child(even) {
+    background-color: #dddddd;
+}
+table.coolTable tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+.half-page-div{
+	float: left;
+	width: 48%;
+	margin: 1%;
+}
+
+/* End of Article Section*/
+
+/* Aside Section */
+.aside_main{
+  background-color: gray;
+  font-family: sans-serif;
+  width:20%;
+  height: auto;
+  float:left;
+  margin-top: 1em;
+  margin-left: 2%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.aside_main img{
+  padding: 15px;
+  width: 80%;
+  max-height: inherit;
+}
+/* End of Aside Section */
+
+
+/* Footer Section */
+
+.stay_bottom{
+  /*background-color: #00897b;*/
+  background-color: #212121;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  height: 121px;
+  width: 100%;
+}
+
+.footer{
+	border-top-style: solid;
+	border-top-color: red;
+  	overflow: hidden;
+  	height: auto;
+}
+
+div.logo{
+  left:0;
+  height: 100px;
+  width: 100px;
+  float:left;
+  padding: 0.5em;
+}
+div.logo img{
+  height: inherit;
+  width: auto;
+}
+
+.copyrights{
+  width: 70vw;
+  height: auto;
+  text-align: center;
+  float: left;
+  margin-left: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: sans-serif;
+}
+
+.contacts{
+  float:left;
+  width: 1vw;
+}
+
+/* End of Footer Section */
