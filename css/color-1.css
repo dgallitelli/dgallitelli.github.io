@@ -28,7 +28,7 @@
 .single-portfolio-share a,
 .single-portfolio-share a:hover,
 .owl-theme .owl-controls .owl-page span{
-    background-color: #0EB57D;
+    background-color: #2196F3;
 }
 
 .site-logo a,
@@ -55,7 +55,7 @@
 .category-content a:hover,
 .single-portfolio-rating,
 .color-scheme-select-btn{
-    color: #0EB57D;
+    color: #2196F3;
 }
 
 blockquote,
@@ -64,17 +64,17 @@ blockquote,
 .input-field textarea:focus:not([readonly]),
 .color-scheme-select,
 .color-scheme-select-btn{
-    border-color: #0EB57D;
+    border-color: #2196F3;
 }
 
 .arrow-box::before,
 .timeline-time::before{
-    border-left-color: #0EB57D;
+    border-left-color: #2196F3;
 }
 
 .input-field input:focus:not([readonly]),
 .input-field textarea:focus:not([readonly]){
-    -webkit-box-shadow: 0 1px 0 0 #0EB57D;
-    -moz-box-shadow: 0 1px 0 0 #0EB57D;
-    box-shadow: 0 1px 0 0 #0EB57D;
+    -webkit-box-shadow: 0 1px 0 0 #2196F3;
+    -moz-box-shadow: 0 1px 0 0 #2196F3;
+    box-shadow: 0 1px 0 0 #2196F3;
 }
