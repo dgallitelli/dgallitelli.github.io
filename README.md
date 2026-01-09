@@ -1,90 +1,82 @@
-<p align="center">
-  <a href="http://materializecss.com/">
-    <img src="http://materializecss.com/res/materialize.svg" width="150">
-  </a>
+# Davide Gallitelli - Professional Portfolio
 
-  <h3 align="center">MaterializeCSS</h3>
+A modern, responsive single-page web application showcasing my professional experience as a Senior Specialist Solutions Architect for Generative AI and Machine Learning at Amazon Web Services.
 
-  <p align="center">
-    Materialize, a CSS Framework based on material design.
-    <br>
-    <a href="http://materializecss.com/"><strong>-- Browse the docs --</strong></a>
-    <br>
-    <br>
-    <a href="https://travis-ci.org/Dogfalo/materialize">
-      <img src="https://travis-ci.org/Dogfalo/materialize.svg?branch=master" alt="Travis CI badge">
-    </a>
-    <a href="https://badge.fury.io/js/materialize-css">
-      <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
-    </a>
-    <a href="https://cdnjs.com/libraries/materialize">
-      <img src="https://img.shields.io/cdnjs/v/materialize.svg" alt="CDNJS version badge">
-    </a>
-    <a href="https://david-dm.org/Dogfalo/materialize">
-      <img src="https://david-dm.org/Dogfalo/materialize/status.svg" alt="dependencies Status badge">
-      </a>
-    <a href="https://david-dm.org/Dogfalo/materialize#info=devDependencies">
-      <img src="https://david-dm.org/Dogfalo/materialize/dev-status.svg" alt="devDependency Status badge">
-    </a>
-    <a href="https://gitter.im/Dogfalo/materialize">
-      <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter badge">
-    </a>
-</p>
+## 🚀 Live Site
 
-## Table of Contents
-- [Quickstart](#quickstart)
-- [Documentation](#documentation)
-- [Supported Browsers](#supported-browsers)
-- [Changelog](#changelog)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [Copyright and license](#copyright-and-license)
+Visit the portfolio at: [https://dgallitelli.github.io](https://dgallitelli.github.io)
 
-## Quickstart:
-Read the [getting started guide](http://materializecss.com/getting-started.html) for more information on how to use materialize.
+## 📋 Features
 
-- [Download the latest release](https://github.com/Dogfalo/materialize/releases/latest) of materialize directly from GitHub.
-- Clone the repo: `git clone https://github.com/Dogfalo/materialize.git`
-- Include the files via [cdnjs](https://cdnjs.com/libraries/materialize). More [here](http://materializecss.com/getting-started.html).
-- Install with [npm](https://www.npmjs.com): `npm install materialize-css`
-- Install with [Bower](https://bower.io): `bower install materialize`
-- Install with [Atmosphere](https://atmospherejs.com): `meteor add materialize:materialize`
+- **Modern Design**: Clean, professional layout with smooth animations
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Single Page App**: Smooth scrolling navigation between sections
+- **Performance Optimized**: Fast loading with minimal dependencies
 
-## Documentation
-The documentation can be found at <http://materializecss.com>. To run the documentation locally on your machine, you need [Node.js](https://nodejs.org/en/) installed on your computer.
+## 🛠 Tech Stack
 
-### Running documentation locally
-Run these commands to set up the documentation:
+- **HTML5**: Semantic markup structure
+- **CSS3**: Modern styling with Flexbox and Grid
+- **Vanilla JavaScript**: Interactive features and animations
+- **Font Awesome**: Professional icons
+- **Google Fonts**: Inter typography
 
-```bash
-git clone https://github.com/Dogfalo/materialize
-cd materialize
-npm install
+## 📁 Project Structure
+
+```
+├── index.html              # Main HTML file
+├── styles.css              # All CSS styles
+├── script.js               # JavaScript functionality
+├── images/
+│   ├── dggallit.jpeg      # Profile photo
+│   ├── favicon.ico        # Site favicon
+│   └── favicon.png        # Alternative favicon
+├── resume-davide-gallitelli-082025.pdf  # Resume download
+├── README.md              # This file
+└── LICENSE                # MIT License
 ```
 
-Then run `grunt monitor` to compile the documentation. When it finishes, open a new browser window and navigate to `localhost:8000`. We use [BrowserSync](https://www.browsersync.io/) to display the documentation.
+## 🎯 Sections
 
-### Documentation for previous releases
-Previous releases and their documentation are available for [download](https://github.com/Dogfalo/materialize/releases).
+1. **About**: Professional introduction and key highlights
+2. **Experience**: Career timeline with achievements
+3. **Publications**: AWS ML Blog articles and Medium publications
+4. **Skills**: Technical expertise organized by category
+5. **Contact**: Professional contact information and links
 
-## Supported Browsers:
-Materialize is compatible with:
+## 🔧 Local Development
 
-- Chrome 35+
-- Firefox 31+
-- Safari 7+
-- Opera
-- Edge
-- IE 10+
+To run locally:
 
-## Changelog
-For changelogs, check out [the Releases section of materialize](https://github.com/Dogfalo/materialize/releases) or the [CHANGELOG.md](CHANGELOG.md).
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Or serve with a local server:
+   ```bash
+   python -m http.server 8000
+   ```
 
-## Testing
-We use Jasmine as our testing framework and we're trying to write a robust test suite for our components. If you want to help, [here's a starting guide on how to write tests in Jasmine](CONTRIBUTING.md#jasmine-testing-guide).
+## 📱 Responsive Design
 
-## Contributing
-Check out the [CONTRIBUTING document](CONTRIBUTING.md) in the root of the repository to learn how you can contribute. You can also browse the [help-wanted](https://github.com/Dogfalo/materialize/labels/help-wanted) tag in our issue tracker to find things to do.
+The portfolio is fully responsive with breakpoints at:
+- Mobile: < 768px
+- Tablet: 768px - 1024px  
+- Desktop: > 1024px
 
-## Copyright and license
-Code copyright 2017 Materialize. Code released under the MIT license.
+## 🎨 Customization
+
+The design uses CSS custom properties for easy theming. Key colors:
+- Primary: `#2563eb` (Blue)
+- Background: `#ffffff` (White)
+- Text: `#1f2937` (Dark Gray)
+- Accent: `#f8fafc` (Light Gray)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+- **Email**: davidegallitelli@gmail.com
+- **LinkedIn**: [linkedin.com/in/dgallitelli](https://linkedin.com/in/dgallitelli/)
+- **GitHub**: [github.com/dgallitelli](https://github.com/dgallitelli)
+- **Medium**: [dgallitelli95.medium.com](https://dgallitelli95.medium.com/)
