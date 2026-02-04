@@ -189,6 +189,17 @@ body {
     line-height: 1.7;
 }
 
+.hero-location {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+
+.hero-location i {
+    margin-right: 0.4rem;
+    color: var(--primary-color);
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -1298,156 +1309,286 @@ body {
     font-weight: 500;
 }
 
-/* Print Styles */
+/* Print Styles - Optimized for 2-page CV */
 @media print {
-    .navbar, .theme-toggle, .hamburger {
+    /* Base settings for compact 2-page layout */
+    body {
+        font-size: 10px !important;
+        line-height: 1.3 !important;
+        color: black !important;
+        background: white !important;
+    }
+
+    /* Hide non-essential elements */
+    .navbar, .theme-toggle, .hamburger, .hero-buttons, .social-links, .videos, .contact {
         display: none !important;
     }
-    
+
+    /* Hero Section - Compact */
     .hero {
         background: white !important;
         color: black !important;
-        padding: 20px 0 !important;
+        padding: 15px 0 !important;
         min-height: auto !important;
         page-break-after: avoid;
     }
-    
-    .hero-text h1, .hero-text h2, .hero-text h3 {
-        color: black !important;
+
+    .hero-content {
+        grid-template-columns: 2fr 1fr !important;
+        gap: 15px !important;
     }
-    
+
+    .hero-text h1 {
+        color: black !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .hero-text h2 {
+        color: black !important;
+        font-size: 1rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .hero-text h3 {
+        color: #333 !important;
+        font-size: 0.85rem !important;
+    }
+
     .hero-description {
         color: #333 !important;
+        font-size: 0.8rem !important;
+        margin-top: 0.5rem !important;
     }
-    
-    .hero-buttons {
-        display: none !important;
+
+    .hero-location {
+        color: #555 !important;
+        font-size: 0.75rem !important;
+        margin-bottom: 0.5rem !important;
     }
-    
+
     .hero-summary {
         display: flex !important;
         justify-content: space-between !important;
-        margin: 15px 0 !important;
-        padding: 10px 0 !important;
+        margin: 10px 0 !important;
+        padding: 8px 0 !important;
         border-top: 1px solid #ddd !important;
         border-bottom: 1px solid #ddd !important;
+        gap: 0.5rem !important;
     }
-    
+
     .summary-item {
         text-align: center !important;
     }
-    
+
     .summary-number {
         color: #2563eb !important;
-        font-size: 1.5rem !important;
+        font-size: 1.1rem !important;
     }
-    
+
     .summary-label {
         color: #666 !important;
-        font-size: 0.75rem !important;
+        font-size: 0.65rem !important;
     }
-    
+
+    .profile-img {
+        width: 80px !important;
+        height: 80px !important;
+        border: 2px solid #ddd !important;
+    }
+
+    /* Section styling - Compact padding */
+    .experience, .skills, .education, .publications, .opensource {
+        padding: 15px 0 !important;
+    }
+
     .section-title {
-        font-size: 1.5rem !important;
-        margin: 20px 0 15px !important;
+        font-size: 1.1rem !important;
+        margin: 10px 0 8px !important;
         color: #2563eb !important;
         border-bottom: 2px solid #2563eb !important;
-        padding-bottom: 5px !important;
+        padding-bottom: 3px !important;
     }
-    
-    .timeline-content, .impact-item, .skill-category, .education-item {
-        break-inside: avoid;
-        margin-bottom: 15px !important;
-        border: 1px solid #ddd !important;
-        padding: 15px !important;
-    }
-    
-    .videos, .contact {
+
+    /* Timeline - Remove visual elements, compress spacing */
+    .timeline::before, .timeline-marker {
         display: none !important;
     }
-    
+
+    .timeline-item {
+        margin-bottom: 0.75rem !important;
+        padding-left: 0 !important;
+    }
+
+    .timeline-content {
+        break-inside: avoid;
+        margin-bottom: 0.5rem !important;
+        border: 1px solid #ddd !important;
+        padding: 8px !important;
+    }
+
+    .timeline-header {
+        margin-bottom: 0.25rem !important;
+    }
+
+    .timeline-title {
+        font-size: 0.9rem !important;
+    }
+
+    .timeline-company {
+        font-size: 0.8rem !important;
+    }
+
+    .timeline-date {
+        font-size: 0.7rem !important;
+    }
+
+    .timeline-description {
+        font-size: 0.75rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .timeline-description ul {
+        margin: 0.25rem 0 !important;
+        padding-left: 1rem !important;
+    }
+
+    .timeline-description li {
+        margin-bottom: 0.15rem !important;
+    }
+
+    /* Skills - Grid layout compressed */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem !important;
+    }
+
+    .skill-category {
+        break-inside: avoid;
+        margin-bottom: 0.5rem !important;
+        border: 1px solid #ddd !important;
+        padding: 8px !important;
+    }
+
+    .skill-category h3 {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .skill-tags {
+        gap: 0.25rem !important;
+    }
+
+    .skill-tag {
+        background: #f0f0f0 !important;
+        color: #333 !important;
+        border: 1px solid #ddd !important;
+        padding: 2px 6px !important;
+        font-size: 0.65rem !important;
+    }
+
+    /* Education - Compact grid */
+    .education-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.5rem !important;
+    }
+
+    .education-item {
+        break-inside: avoid;
+        margin-bottom: 0.5rem !important;
+        border: 1px solid #ddd !important;
+        padding: 8px !important;
+    }
+
+    .education-item h3 {
+        font-size: 0.85rem !important;
+    }
+
+    .education-item p {
+        font-size: 0.75rem !important;
+        margin: 0.1rem 0 !important;
+    }
+
+    /* Publications - Compact */
     .publications {
         page-break-before: auto !important;
     }
-    
+
+    .publications-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.4rem !important;
+    }
+
     .publication-item {
-        margin-bottom: 10px !important;
-        padding: 10px !important;
+        margin-bottom: 0.4rem !important;
+        padding: 6px 8px !important;
         border-left: 3px solid #2563eb !important;
     }
-    
+
+    .publication-item h3 {
+        font-size: 0.8rem !important;
+    }
+
+    .publication-item p {
+        font-size: 0.7rem !important;
+        margin: 0.1rem 0 !important;
+    }
+
     .publication-link {
         color: #2563eb !important;
         text-decoration: none !important;
     }
-    
+
     .publication-link::after {
         content: " (" attr(href) ")" !important;
-        font-size: 0.7rem !important;
+        font-size: 0.6rem !important;
         color: #666 !important;
     }
-    
-    .contact-link::after {
-        content: " (" attr(href) ")" !important;
+
+    /* Open Source - Compact */
+    .opensource-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.4rem !important;
+    }
+
+    .opensource-item {
+        break-inside: avoid;
+        padding: 6px 8px !important;
+        border: 1px solid #ddd !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .opensource-item h3 {
+        font-size: 0.8rem !important;
+    }
+
+    .opensource-item p {
         font-size: 0.7rem !important;
-        color: #666 !important;
     }
-    
-    body {
-        font-size: 12px !important;
-        line-height: 1.4 !important;
-        color: black !important;
-        background: white !important;
+
+    /* Impact items */
+    .impact-item {
+        break-inside: avoid;
+        margin-bottom: 0.5rem !important;
+        border: 1px solid #ddd !important;
+        padding: 6px !important;
     }
-    
-    .profile-img {
-        width: 120px !important;
-        height: 120px !important;
-        border: 2px solid #ddd !important;
-    }
-    
-    .hero-content {
-        grid-template-columns: 2fr 1fr !important;
-        gap: 20px !important;
-    }
-    
-    .achievement-tag, .skill-tag {
+
+    .achievement-tag {
         background: #f0f0f0 !important;
         color: #333 !important;
         border: 1px solid #ddd !important;
+        font-size: 0.65rem !important;
+        padding: 2px 5px !important;
     }
-    
-    .timeline-marker {
-        background: #2563eb !important;
+
+    /* Page break control */
+    .experience {
+        page-break-inside: auto !important;
     }
-    
-    .timeline::before {
-        background: #2563eb !important;
-    }
-    
-    /* Ensure contact info is visible */
-    .contact {
-        display: block !important;
-        padding: 20px 0 !important;
-    }
-    
-    .contact-content p {
-        display: none !important;
-    }
-    
-    .contact-links {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-around !important;
-        flex-wrap: wrap !important;
-    }
-    
-    .contact-link {
-        background: none !important;
-        border: none !important;
-        padding: 5px !important;
-        min-width: auto !important;
-        font-size: 0.8rem !important;
+
+    .skills {
+        page-break-after: avoid !important;
     }
 }
 
