@@ -1,200 +1,153 @@
-// Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
     const body = document.body;
 
-    // Theme Toggle Functionality
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // === THEME TOGGLE ===
+    function updateThemeIcon(isDark) {
+        const icon = themeToggleBtn.querySelector('i');
+        icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+        themeToggleBtn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
     function toggleTheme() {
         body.classList.toggle('dark-theme');
         const isDark = body.classList.contains('dark-theme');
-        
-        // Update button icon
-        const icon = themeToggleBtn.querySelector('i');
-        if (isDark) {
-            icon.className = 'fas fa-sun';
-        } else {
-            icon.className = 'fas fa-moon';
-        }
-        
-        // Save theme preference
+        updateThemeIcon(isDark);
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
     }
 
-    // Load saved theme preference
+    // Load saved theme (default: dark)
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
         body.classList.remove('dark-theme');
-        themeToggleBtn.querySelector('i').className = 'fas fa-moon';
+        updateThemeIcon(false);
     } else {
-        // Default to dark theme
         body.classList.add('dark-theme');
-        themeToggleBtn.querySelector('i').className = 'fas fa-sun';
+        updateThemeIcon(true);
     }
 
-    // Theme toggle event listener
     themeToggleBtn.addEventListener('click', toggleTheme);
 
-    // Toggle mobile menu
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
+    // === MOBILE NAV ===
+    hamburger.addEventListener('click', function () {
+        const isOpen = hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function (e) {
+            // Close mobile menu
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
-        });
-    });
+            hamburger.setAttribute('aria-expanded', 'false');
 
-    // Toggle mobile menu
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
-
-    // Smooth scrolling for navigation links
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+            // Smooth scroll
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
             if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+                const offsetTop = targetSection.offsetTop - 72;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
             }
         });
     });
 
-    // Navbar background on scroll
-    window.addEventListener('scroll', function() {
+    // === NAVBAR SCROLL SHADOW ===
+    window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.navbar');
-        const isDark = body.classList.contains('dark-theme');
-        
         if (window.scrollY > 50) {
-            navbar.style.background = isDark ? 'rgba(17, 24, 39, 0.98)' : 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = isDark ? '0 2px 20px rgba(0, 0, 0, 0.3)' : '0 2px 20px rgba(0, 0, 0, 0.1)';
+            navbar.style.boxShadow = '0 2px 24px rgba(0, 0, 0, 0.15)';
         } else {
-            navbar.style.background = isDark ? 'rgba(17, 24, 39, 0.95)' : 'rgba(255, 255, 255, 0.95)';
             navbar.style.boxShadow = 'none';
         }
-    });
+    }, { passive: true });
 
-    // Animate elements on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
+    // === SCROLL REVEAL ===
+    const revealObserver = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
             }
         });
-    }, observerOptions);
-
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll('.timeline-item, .publication-item, .skill-category');
-    animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
+    }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
     });
 
-    // Add stagger animation to timeline items
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    timelineItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.2}s`;
-    });
+    const revealSelectors = [
+        '.timeline-item',
+        '.publication-item',
+        '.skill-category',
+        '.education-item',
+        '.video-item',
+    ];
 
-    // Add stagger animation to skill categories
-    const skillCategories = document.querySelectorAll('.skill-category');
-    skillCategories.forEach((category, index) => {
-        category.style.transitionDelay = `${index * 0.1}s`;
-    });
-
-    // Typing effect for hero title (optional enhancement)
-    const heroTitle = document.querySelector('.hero-text h1');
-    if (heroTitle) {
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        heroTitle.style.borderRight = '2px solid white';
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            } else {
-                setTimeout(() => {
-                    heroTitle.style.borderRight = 'none';
-                }, 1000);
+    document.querySelectorAll(revealSelectors.join(', ')).forEach((el, _i, all) => {
+        if (!prefersReducedMotion) {
+            el.classList.add('reveal');
+            // Stagger siblings within same parent
+            const siblings = Array.from(el.parentElement.children).filter(
+                c => c.classList.contains(el.classList[0])
+            );
+            const idx = siblings.indexOf(el);
+            if (idx > 0) {
+                el.style.transitionDelay = `${idx * 0.08}s`;
             }
-        };
-        
-        // Start typing effect after a short delay
-        setTimeout(typeWriter, 500);
+        }
+        revealObserver.observe(el);
+    });
+
+    // === COUNTER ANIMATION (hero stats) ===
+    if (!prefersReducedMotion) {
+        const counterObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.6 });
+
+        document.querySelectorAll('.summary-number').forEach(el => {
+            counterObserver.observe(el);
+        });
     }
 
-    // Add hover effects to publication items
-    const publicationItems = document.querySelectorAll('.publication-item');
-    publicationItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-            this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            this.style.boxShadow = 'none';
+    function animateCounter(el) {
+        const text = el.textContent.trim();
+        const match = text.match(/^(\d+)(\D*)$/);
+        if (!match) return;
+
+        const target = parseInt(match[1], 10);
+        const suffix = match[2] || '';
+        const duration = 1000;
+        const startVal = Math.max(0, Math.floor(target * 0.4));
+        const startTime = performance.now();
+
+        function tick(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease-out cubic
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.round(startVal + (target - startVal) * eased);
+            el.textContent = current + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+        }
+
+        requestAnimationFrame(tick);
+    }
+
+    // === EXTERNAL LINK LOGGING (optional analytics hook) ===
+    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+        link.addEventListener('click', function () {
+            console.log('External link:', this.href);
         });
     });
-
-    // Add click tracking for external links (optional analytics)
-    const externalLinks = document.querySelectorAll('a[target="_blank"]');
-    externalLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            // You can add analytics tracking here
-            console.log('External link clicked:', this.href);
-        });
-    });
-});
-
-// Add CSS for hamburger animation
-document.addEventListener('DOMContentLoaded', function() {
-    const style = document.createElement('style');
-    style.textContent = `
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-        
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-    `;
-    document.head.appendChild(style);
 });
