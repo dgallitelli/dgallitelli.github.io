@@ -1,3 +1,7 @@
 *.db
 .DS_Store
 .vscode
+.continue-here.md
+.claude
+logs
+firebase-debug.log
