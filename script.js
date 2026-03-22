@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
             navMenu.classList.remove('active');
             hamburger.setAttribute('aria-expanded', 'false');
 
+            // Skip smooth scroll for external/page links
+            if (this.classList.contains('nav-link-external')) return;
+
             // Smooth scroll
             e.preventDefault();
             const targetId = this.getAttribute('href');

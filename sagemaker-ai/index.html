@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SageMaker AI Projects - Davide Gallitelli</title>
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../project-page.css">
+</head>
+<body class="dark-theme">
+    <a href="#projects" class="skip-link">Skip to main content</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration:none;color:var(--accent-primary)"><span>DG</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link nav-link-external"><i class="fas fa-arrow-left"></i> Back to Home</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="project-hero" id="projects">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-icon"><i class="fas fa-brain"></i></div>
+                <h1>Amazon SageMaker AI</h1>
+                <p class="project-subtitle">End-to-end ML on AWS — from training and fine-tuning to deployment and monitoring</p>
+                <p class="project-description">
+                    A collection of repositories covering the full SageMaker AI lifecycle: AutoML with AutoGluon, LLM fine-tuning (QLoRA/Full), sparse embeddings, time-series forecasting, MLOps templates, and SageMaker Python SDK v3 patterns.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-list" id="repos">
+        <div class="container">
+            <h2 class="section-title">Repositories</h2>
+
+            <!-- claude-code-skill-for-sagemaker-ai — Mar 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>claude-code-skill-for-sagemaker-ai</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Mar 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-claude">Claude Code Skill</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Comprehensive Claude Code skill for Amazon SageMaker AI. Covers the full lifecycle: inference endpoints, training (classical ML + LLM fine-tuning), HyperPod, Model Monitor, AutoGluon, and SDK v3 patterns. Consolidates and replaces three earlier skills.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">Claude Code</span><span class="skill-tag">Inference</span><span class="skill-tag">Training</span><span class="skill-tag">HyperPod</span><span class="skill-tag">SDK v3</span>
+                </div>
+                <a href="https://github.com/dgallitelli/claude-code-skill-for-sagemaker-ai" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- kiro-power-for-sagemaker-ai — Mar 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>kiro-power-for-sagemaker-ai</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Mar 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-kiro">Kiro Power</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">A Kiro Power providing battle-tested guidance for deploying and training ML models on Amazon SageMaker AI. Covers inference endpoints, LLM fine-tuning, HyperPod clusters, Model Monitor, AutoGluon, and SDK v3 patterns. Pure knowledge base — no MCP servers required.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">Kiro Power</span><span class="skill-tag">Inference</span><span class="skill-tag">Training</span><span class="skill-tag">HyperPod</span><span class="skill-tag">SDK v3</span>
+                </div>
+                <a href="https://github.com/dgallitelli/kiro-power-for-sagemaker-ai" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- qwen35-sft-sagemaker — Mar 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>qwen35-sft-sagemaker</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Mar 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Validated SFT recipes for fine-tuning Qwen 3.5 (4B and 9B Base) on SageMaker Training Jobs. Includes QLoRA and full fine-tuning YAML recipes, an interactive recipe generator, and pinned dependency fixes for the PyTorch 2.9.0 DLC.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">LLM Fine-Tuning</span><span class="skill-tag">QLoRA</span><span class="skill-tag">Qwen 3.5</span><span class="skill-tag">SageMaker Recipes</span><span class="skill-tag">SDK v3</span>
+                </div>
+                <a href="https://github.com/dgallitelli/qwen35-sft-sagemaker" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sagemaker-autogluon-sdkv3 — Mar 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-autogluon-sdkv3</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Mar 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Train, evaluate, deploy, and orchestrate AutoGluon models on Amazon SageMaker using SDK v3. Covers tabular classification, time-series forecasting, multimodal text+tabular fusion, and custom Docker images.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">AutoGluon</span><span class="skill-tag">SDK v3</span><span class="skill-tag">Tabular</span><span class="skill-tag">TimeSeries</span><span class="skill-tag">Multimodal</span><span class="skill-tag">Pipelines</span>
+                </div>
+                <div class="project-card-links">
+                    <a href="https://github.com/dgallitelli/sagemaker-autogluon-sdkv3" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="https://dgallitelli95.medium.com/" target="_blank" class="btn-repo btn-repo-secondary"><i class="fab fa-medium"></i> Blog Post</a>
+                </div>
+            </div>
+
+            <!-- sagemaker-splade-embeddings — Mar 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-splade-embeddings</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Mar 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Fine-tune SPLADE sparse embedding models with ANCE hard negative mining, self-contained in a single SageMaker training job. Two-phase pipeline on three domains with automatic best-model selection. Deployed via TEI endpoint with SPLADE pooling.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">Sparse Embeddings</span><span class="skill-tag">SPLADE</span><span class="skill-tag">Information Retrieval</span><span class="skill-tag">ANCE Mining</span><span class="skill-tag">SDK v3</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sagemaker-splade-embeddings" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sagemaker-ntl-detection — Mar 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-ntl-detection-with-xgboost-and-chronos</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Mar 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Electricity theft detection comparing three feature engineering strategies: baseline statistics, enhanced temporal features, and Chronos-2 forecast residuals — all classified with XGBoost on SageMaker.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">XGBoost</span><span class="skill-tag">Chronos-2</span><span class="skill-tag">Anomaly Detection</span><span class="skill-tag">Time Series</span><span class="skill-tag">SDK v3</span>
+                </div>
+                <div class="project-card-links">
+                    <a href="https://github.com/dgallitelli/sagemaker-ntl-detection-with-xgboost-and-chronos" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="https://dgallitelli95.medium.com/" target="_blank" class="btn-repo btn-repo-secondary"><i class="fab fa-medium"></i> Blog Post</a>
+                </div>
+            </div>
+
+            <!-- generative-ai-on-amazon-sagemaker — Feb 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>generative-ai-on-amazon-sagemaker</h3>
+                        <span class="fork-badge">fork</span>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Feb 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Fork of the official aws-samples repository. Migrated the entire DIY agents workshop to SageMaker Python SDK v3, updating 8 notebooks with new patterns for ModelTrainer, boto3 integration, and modern SDK architecture.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">Generative AI</span><span class="skill-tag">SDK v3 Migration</span><span class="skill-tag">DIY Agents</span><span class="skill-tag">aws-samples</span>
+                </div>
+                <div class="project-card-links">
+                    <a href="https://github.com/dgallitelli/generative-ai-on-amazon-sagemaker" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View Fork</a>
+                    <a href="https://github.com/aws-samples/generative-ai-on-amazon-sagemaker/pull/163" target="_blank" class="btn-repo btn-repo-secondary"><i class="fas fa-code-branch"></i> View PR #163</a>
+                </div>
+            </div>
+
+            <!-- sagemaker-sdk-v3-xgboost-example — Feb 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-sdk-v3-xgboost-example</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Feb 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">XGBoost training and deployment example using Amazon SageMaker Python SDK v3.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">XGBoost</span><span class="skill-tag">SDK v3</span><span class="skill-tag">Training</span><span class="skill-tag">Deployment</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sagemaker-sdk-v3-xgboost-example" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sagemaker-ai-mcp-server — Oct 2025 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-ai-mcp-server</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Oct 2025</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">MCP Server that uses SageMaker AI APIs to monitor and manage resources.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">MCP</span><span class="skill-tag">SageMaker APIs</span><span class="skill-tag">Resource Management</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sagemaker-ai-mcp-server" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sagemaker-canvas-scheduled-shutdown — Mar 2023 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-canvas-scheduled-shutdown</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Mar 2023</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">CDK/CloudFormation template to automatically shut down Amazon SageMaker Canvas apps on a schedule. Choose daily at 8PM or Fridays at 8PM to save costs on idle Canvas environments.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">SageMaker Canvas</span><span class="skill-tag">AWS CDK</span><span class="skill-tag">Cost Optimization</span><span class="skill-tag">CloudFormation</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sagemaker-canvas-scheduled-shutdown" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sagemaker-revenge-of-the-scripts — Feb 2022 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-revenge-of-the-scripts</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Feb 2022</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">SageMaker Script Mode examples and patterns.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">Script Mode</span><span class="skill-tag">Training</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sagemaker-revenge-of-the-scripts" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sm-project-multiple-choice-deployment — Dec 2021 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sm-project-multiple-choice-deployment</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Dec 2021</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">A SageMaker Projects template to deploy a model from Model Registry with your choice of deployment method: real-time inference, asynchronous inference, or batch transform.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">MLOps</span><span class="skill-tag">SageMaker Projects</span><span class="skill-tag">Model Registry</span><span class="skill-tag">Service Catalog</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sm-project-multiple-choice-deployment" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- awsome-sagemaker-projects-templates — Oct 2021 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>awsome-sagemaker-projects-templates</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Oct 2021</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Collection of awesome SageMaker Projects templates for MLOps workflows.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">MLOps</span><span class="skill-tag">SageMaker Projects</span><span class="skill-tag">Templates</span>
+                </div>
+                <a href="https://github.com/dgallitelli/awsome-sagemaker-projects-templates" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sagemaker-scheduled-processing — May 2021 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-scheduled-processing</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> May 2021</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Scheduling a SageMaker Processing job with SageMaker Pipelines and Amazon EventBridge.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">SageMaker Pipelines</span><span class="skill-tag">EventBridge</span><span class="skill-tag">Processing</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sagemaker-scheduled-processing" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- Private repos (commented out) -->
+            <!--
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title"><i class="fab fa-github"></i><h3>private-sagemaker-repo</h3></div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> —</span>
+                </div>
+                <p class="project-card-desc">Description of private repository.</p>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Related Content -->
+    <section class="related-content">
+        <div class="container">
+            <h2 class="section-title">Related Content</h2>
+            <div class="related-grid">
+                <div class="related-item">
+                    <h3><i class="fab fa-aws"></i> AWS ML Blog</h3>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <h4>Enhance AI agents using predictive ML models with Amazon SageMaker AI and MCP</h4>
+                            <a href="https://aws.amazon.com/blogs/machine-learning/enhance-ai-agents-using-predictive-ml-models-with-amazon-sagemaker-ai-and-model-context-protocol-mcp/" target="_blank" class="publication-link">Read Article <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="publication-item">
+                            <h4>Scale training and inference of thousands of ML models with Amazon SageMaker</h4>
+                            <a href="https://aws.amazon.com/blogs/machine-learning/scale-training-and-inference-of-thousands-of-ml-models-with-amazon-sagemaker/" target="_blank" class="publication-link">Read Article <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <a href="https://aws.amazon.com/blogs/machine-learning/author/dggallit/" target="_blank" class="view-all-btn">All AWS ML Blog Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="related-item">
+                    <h3><i class="fas fa-video"></i> Speaking</h3>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <h4>AWS re:Invent 2025 — Build more effective agents through model customization (AIM383)</h4>
+                            <a href="https://www.youtube.com/watch?v=sL9EU_O9Mxw&t=1289" target="_blank" class="publication-link">Watch <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="publication-item">
+                            <h4>AWS re:Invent 2025 — Develop AI Agents faster with SageMaker Studio & Bedrock AgentCore (AIM388)</h4>
+                            <a href="https://www.youtube.com/watch?v=UL_7a2GEu10&t=1408" target="_blank" class="publication-link">Watch <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Davide Gallitelli. All rights reserved.</p></div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

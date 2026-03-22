@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP & Agentic AI - Davide Gallitelli</title>
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../project-page.css">
+</head>
+<body class="dark-theme">
+    <a href="#projects" class="skip-link">Skip to main content</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration:none;color:var(--accent-primary)"><span>DG</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link nav-link-external"><i class="fas fa-arrow-left"></i> Back to Home</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="project-hero" id="projects">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-icon"><i class="fas fa-plug"></i></div>
+                <h1>MCP & Agentic AI</h1>
+                <p class="project-subtitle">Model Context Protocol servers, multi-agent systems, and AI-powered tools</p>
+                <p class="project-description">
+                    Repositories exploring the Model Context Protocol (MCP) ecosystem — from running MCP servers on AWS infrastructure to building multi-agent systems with Strands and Bedrock. Includes document extraction, generative BI, and practical MCP patterns.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-list" id="repos">
+        <div class="container">
+            <h2 class="section-title">Repositories</h2>
+
+            <!-- aws-document-extraction-hybrid — Feb 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>aws-document-extraction-hybrid</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Feb 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Hybrid document extraction architecture comparing Claude, BDA, and Textract for intelligent document processing.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">Document Extraction</span><span class="skill-tag">Claude</span><span class="skill-tag">Textract</span><span class="skill-tag">BDA</span>
+                </div>
+                <a href="https://github.com/dgallitelli/aws-document-extraction-hybrid" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- bedrock-strands-multi-agent-generative-bi-demo — Feb 2026 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>bedrock-strands-multi-agent-generative-bi-demo</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Feb 2026</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">AI-powered multi-agent data analytics platform using AWS Bedrock and Strands Agents SDK. Demonstrates generative BI with coordinated agent workflows.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">Multi-Agent</span><span class="skill-tag">Strands SDK</span><span class="skill-tag">Bedrock</span><span class="skill-tag">Generative BI</span>
+                </div>
+                <a href="https://github.com/dgallitelli/bedrock-strands-multi-agent-generative-bi-demo" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- sagemaker-ai-mcp-server — Oct 2025 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>sagemaker-ai-mcp-server</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Oct 2025</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">MCP Server that uses SageMaker AI APIs to monitor and manage resources.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">MCP Server</span><span class="skill-tag">SageMaker AI</span><span class="skill-tag">Resource Management</span>
+                </div>
+                <a href="https://github.com/dgallitelli/sagemaker-ai-mcp-server" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- mcp-server-with-fargate — Apr 2025 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>mcp-server-with-fargate</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Apr 2025</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Running an MCP Server on AWS Fargate on Amazon ECS. Production-ready pattern for hosting MCP servers on managed container infrastructure.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">MCP Server</span><span class="skill-tag">Fargate</span><span class="skill-tag">ECS</span><span class="skill-tag">Docker</span>
+                </div>
+                <a href="https://github.com/dgallitelli/mcp-server-with-fargate" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- mcp-sse-client-server-docker — Apr 2025 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>mcp-sse-client-server-docker</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Apr 2025</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Python</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">A simple implementation of MCP Client/Server architecture with HTTP SSE transport layer, dockerized.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">MCP</span><span class="skill-tag">SSE</span><span class="skill-tag">Docker</span><span class="skill-tag">Client/Server</span>
+                </div>
+                <a href="https://github.com/dgallitelli/mcp-sse-client-server-docker" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- llama-index-aws — Apr 2024 -->
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title">
+                        <i class="fab fa-github"></i>
+                        <h3>llama-index-aws</h3>
+                    </div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> Apr 2024</span>
+                    <div class="project-card-badges">
+                        <span class="badge badge-lang">Jupyter Notebook</span>
+                    </div>
+                </div>
+                <p class="project-card-desc">Learning Llama Index usage on AWS — both with Amazon SageMaker and Amazon Bedrock.</p>
+                <div class="project-card-tags">
+                    <span class="skill-tag">LlamaIndex</span><span class="skill-tag">RAG</span><span class="skill-tag">SageMaker</span><span class="skill-tag">Bedrock</span>
+                </div>
+                <a href="https://github.com/dgallitelli/llama-index-aws" target="_blank" class="btn-repo"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <!-- Private repos (commented out) -->
+            <!--
+            <div class="project-card">
+                <div class="project-card-header">
+                    <div class="project-card-title"><i class="fab fa-github"></i><h3>private-mcp-repo</h3></div>
+                    <span class="project-card-date"><i class="fas fa-clock"></i> —</span>
+                </div>
+                <p class="project-card-desc">Description of private repository.</p>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Davide Gallitelli. All rights reserved.</p></div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
